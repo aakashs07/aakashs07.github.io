@@ -2,7 +2,7 @@
 
 I am a 5th year Phd Candidate in Information Management at the Leeds School of Business, University of Colorado Boulder. 
 
-I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that provide solutions to Categorization-related problems. 
+I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identifies association between concepts in natural language.
 
 ### Projects
 
@@ -54,5 +54,7 @@ _May_
 _June_
 - T2. Oral Presentation acceptance in _[INFORMS Annual Meeting](http://meetings2.informs.org/wordpress/seattle2019/)_ in October 2019.
 - D. Presented preliminary results of the dissertation in my [department](https://www.colorado.edu/business/phd/organizational-behavior-and-information-systems)'s _Summer Research Seminar Series_.
+ 
+To contact me, please email at aakash.saxena@colorado.edu.
 
-To know more... Please click _[here](https://github.com/aakash257/aakash257.github.io/blob/master/more.md)_
+
