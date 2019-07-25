@@ -54,3 +54,5 @@ _May_
 _June_
 - T2. Oral Presentation acceptance in _[INFORMS Annual Meeting](http://meetings2.informs.org/wordpress/seattle2019/)_ in October 2019.
 - D. Presented preliminary results of the dissertation in my [department](https://www.colorado.edu/business/phd/organizational-behavior-and-information-systems)'s _Summer Research Seminar Series_.
+
+To know more... Please click _[here](https://github.com/aakash257/aakash257.github.io/blob/master/more.md)_
