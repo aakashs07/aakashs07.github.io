@@ -35,7 +35,7 @@ Quest: What are some polarity cues in news articles?
 _Closed_
 
 Quest: What are the features in authors' vocabulary that can be captured by word embeddings?
-- A2. An Authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings.
+- A2. An Authorship attribution method to identify features to classify fiction-based authorsâ€™ texts using word embeddings.
 
 ### News about my research
 
@@ -54,5 +54,3 @@ _May_
 _June_
 - T2. Oral Presentation acceptance in _[INFORMS Annual Meeting](http://meetings2.informs.org/wordpress/seattle2019/)_ in October 2019.
 - D. Presented preliminary results of the dissertation in my [department](https://www.colorado.edu/business/phd/organizational-behavior-and-information-systems)'s _Summer Research Seminar Series_.
-
-To know more... Please click _[here](https://github.com/aakash257/mypage/blob/master/things.md)_
