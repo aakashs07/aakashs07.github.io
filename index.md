@@ -1,8 +1,8 @@
 ## Aakash Saxena
 
-I am a 5th year Phd Candidate in Information Management at the Leeds School of Business, University of Colorado Boulder. 
+I am a 5th-year Ph.D. Candidate in Information Management at the Leeds School of Business, University of Colorado Boulder.
 
-I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identifies association between concepts in natural language.
+I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identify the association between concepts in natural language.
 
 ### Projects
 
