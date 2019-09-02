@@ -56,7 +56,7 @@ _June_
 - D. Presented preliminary results of the dissertation in my [department](https://www.colorado.edu/business/phd/organizational-behavior-and-information-systems)'s _Summer Research Seminar Series_.
 
 _August_
-- Organization Leadership and Info. Analytics Fellowship funding.
+- Organization Leadership and Information Analytics Fellowship Funding.
 
 To contact me, please email at aakash.saxena@colorado.edu.
 
