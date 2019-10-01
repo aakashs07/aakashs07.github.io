@@ -37,7 +37,7 @@ _Closed_
 Quest: What are the features in authors' vocabulary that can be captured by word embeddings?
 - A2. An Authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings.
 
-### News about my research
+### News about my research activities
 
 2019
 
