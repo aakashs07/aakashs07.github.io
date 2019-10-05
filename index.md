@@ -21,7 +21,7 @@ Quest: What are pragmatic/thematic categories? What is the relation between the 
 - T2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
 
 Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings?
-- T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)
+- T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)_
 
 _Completed_
 
@@ -32,12 +32,12 @@ Quest: What are pragmatic/thematic categories that exist in Hotel Reviews?
 _Going into hibernation as I am currently working on my Dissertation_
 
 Quest: What are some polarity cues in news articles?
-- A1. Comparison of opinions in embedding spaces trained on subjective and objective corpora. Target Journal: ACL-EMNLP.
+- A1. Comparison of opinions in embedding spaces trained on subjective and objective corpora.
 
 _Closed_
 
 Quest: What are the features in authors' vocabulary that can be captured by word embeddings?
-- A2. An Authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings.
+- A2. An authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings. _(Poster acceptance in INFORMS Business Analytics 2019 Conference)_
 
 ### News about my research activities
 
