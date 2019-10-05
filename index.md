@@ -63,5 +63,9 @@ _August_
 To contact me, please email at aakash.saxena@colorado.edu.
 
 ### Extra
+##### Recently read books
+- _[How not to be wrong - the power of mathematics by Jordan Ellenberg](https://www.microsoft.com/en-us/research/video/how-not-to-be-wrong-the-power-of-mathematical-thinking/)_
+- _[The age of living machines by Susan Hockfield](https://www.youtube.com/watch?v=27a8wpmfsiU)_
 
-I recently read an _[article](https://hbr.org/2018/07/its-time-to-make-business-school-research-more-relevant)_ about relevancy of business research. 
+##### Recently read articles
+- on relevancy of business research - _[article](https://hbr.org/2018/07/its-time-to-make-business-school-research-more-relevant)_ 
