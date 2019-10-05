@@ -2,26 +2,26 @@
 
 I am a 5th-year Ph.D. Candidate in Information Management at the Leeds School of Business, University of Colorado Boulder.
 
-I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identify the association between concepts in natural language. 
+I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identify the association between concepts in natural language. One of the applications is to identify differences in perceptions of a concept across cultures as encoded in natural language.
 
-I am seeking research in Information Systems/Applications of NLP based opportunities for the fall 2020. 
+For the fall 2020, I am seeking research-based opportunities in Information Systems, Information Science, or Applications of NLP. 
 
 ### Projects
 
 #### Dissertation (D)
 _Ongoing_
 
-Quest: Building a text-mining tool to measure implicit associations in text. One of the applications of this tool is to identify perceived role congruity or incongruity between leader and gender, which I also discuss in this project.
+Quest: Can we build a text-mining tool to measure implicit associations in text and show its application in identifying perceived role congruity or incongruity between leader and gender?
 
 #### Theory driven (T)
 _Ongoing_
 
 Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?
-- T1. Framing analysis of travel experiences: Identifying the relationship between thematic categories and frames in travel reviews using Text Mining. Target Journal: ISR.
-- T2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products.
+- T1. Framing analysis of travel experiences: Identifying the relationship between thematic categories and frames in travel reviews using Text Mining.
+- T2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
 
-Quest: Word embeddings based semantic view of a social phenomenon such as stereotyping or judgements.
-- T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context.
+Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings?
+- T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)
 
 _Completed_
 
@@ -68,4 +68,4 @@ To contact me, please email at aakash.saxena@colorado.edu.
 - _[The age of living machines by Susan Hockfield](https://www.youtube.com/watch?v=27a8wpmfsiU)_
 
 ##### Recently read articles
-- on relevancy of business research - _[article](https://hbr.org/2018/07/its-time-to-make-business-school-research-more-relevant)_ 
+- _[Reasonable business research](https://hbr.org/2018/07/its-time-to-make-business-school-research-more-relevant)_ 
