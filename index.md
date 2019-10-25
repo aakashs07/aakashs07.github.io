@@ -4,14 +4,15 @@ I am a 5th-year Ph.D. Candidate in Information Management at the Leeds School of
 
 I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identify the association between concepts in natural language. One of the applications is to identify differences in perceptions of a concept across cultures as encoded in natural language.
 
-For the fall 2020, I am seeking research-based opportunities in Information Systems, Information Science, or Applications of NLP. 
+For the fall 2020, I am seeking research-based opportunities in Information Systems, Information Science, Computational Social Science or Applications of NLP. 
 
 ### Projects
 
 #### Dissertation (D)
 _Ongoing_
 
-Quest: Can we build a text-mining tool to measure implicit associations in text and show its application in identifying perceived role congruity or incongruity between leader and gender?
+Quest: Can we identify semantics of a concept with respect to a specific context?
+- A method to measure context-specific semantics of a concept from a general-purpose corpus using word embedding space.
 
 #### Theory driven (T)
 _Ongoing_
