@@ -64,7 +64,7 @@ _August_
 - Organization Leadership and Information Analytics Fellowship Funding.
 
 _October_
-- Presented at the INFORMS Annual Meeting 2019.
+- T2. Presented at the INFORMS Annual Meeting 2019, Seattle.
 
 _December_
 - Proposal defense
@@ -76,7 +76,7 @@ _January_
 
 To contact me, please email at aakash.saxena@colorado.edu.
 
-##### Acknowledgements
+### Acknowledgement
 I am really admired by my mentor and advisor, Prof. Jintae Lee, who has guided me through my PhD journey, making it one of the best learning experiences that I truely enjoyed. 
 
 ### Extra
