@@ -11,21 +11,22 @@ For the fall 2020, I am seeking research-based opportunities in Information Syst
 #### Dissertation (D)
 _Ongoing_
 
+Advisor: Jintae Lee
 Quest: Can we identify semantics of a concept with respect to a specific context?
 - A method to measure context-specific semantics of a concept from a general-purpose corpus using word embedding space.
 
 #### Theory driven (T)
 _Ongoing_
 
-Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?
+Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?  (with Jintae Lee)
 - T1. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
 
-Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings?
+Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings? (with Jintae Lee)
 - T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)_
 
 _Completed_
 
-Quest: What are pragmatic/thematic categories that exist in Hotel Reviews?
+Quest: What are pragmatic/thematic categories that exist in Hotel Reviews? (with Jintae Lee)
 - T0. Text mining thematic categories for evaluative judgement: A test in the domain of hotel reviews and ratings.
 
 #### Application driven (A)
@@ -67,7 +68,7 @@ _October_
 - T2. Presented at the INFORMS Annual Meeting 2019, Seattle.
 
 _December_
-- Proposal defense
+- D. Proposal defense
 
 2020
 
