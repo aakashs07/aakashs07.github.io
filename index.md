@@ -29,7 +29,7 @@ Quest: What are pragmatic/thematic categories that exist in Hotel Reviews?
 - T0. Text mining thematic categories for evaluative judgement: A test in the domain of hotel reviews and ratings.
 
 #### Application driven (A)
-_Going into hibernation as I am currently working on my Dissertation_
+_Ongoing_
 
 Quest: What are some polarity cues in news articles?
 - A2. Comparison of opinions in embedding spaces trained on subjective and objective corpora.
