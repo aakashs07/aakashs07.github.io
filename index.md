@@ -2,7 +2,7 @@
 
 I am a 5th-year Ph.D. Candidate in Information Management at the Leeds School of Business, University of Colorado Boulder.
 
-I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identify the association between concepts in natural language. One of the applications is to identify differences in perceptions of a concept across cultures as encoded in natural language.
+I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identify the association between concepts in natural language. One of the applications is to identify differences in perceptions of a concept across cultures as embedded in natural language.
 
 For the fall 2020, I am seeking research-based opportunities in Information Systems, Information Science, Computational Social Science or Applications of NLP. 
 
@@ -18,8 +18,7 @@ Quest: Can we identify semantics of a concept with respect to a specific context
 _Ongoing_
 
 Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?
-- T1. Framing analysis of travel experiences: Identifying the relationship between thematic categories and frames in travel reviews using Text Mining.
-- T2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
+- T1. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
 
 Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings?
 - T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)_
@@ -33,12 +32,15 @@ Quest: What are pragmatic/thematic categories that exist in Hotel Reviews?
 _Going into hibernation as I am currently working on my Dissertation_
 
 Quest: What are some polarity cues in news articles?
-- A1. Comparison of opinions in embedding spaces trained on subjective and objective corpora.
+- A2. Comparison of opinions in embedding spaces trained on subjective and objective corpora.
+
+Quest: How to tackle deception in news leading to dis- or misinformation?
+- A3. Demystifying perceptions in online news articles: A possible path to identifying news content susceptible to deception. 
 
 _Closed_
 
 Quest: What are the features in authors' vocabulary that can be captured by word embeddings?
-- A2. An authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings. _(Poster acceptance in INFORMS Business Analytics 2019 Conference)_
+- A1. An authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings. _(Poster acceptance in INFORMS Business Analytics 2019 Conference)_
 
 ### News about my research activities
 
@@ -61,12 +63,24 @@ _June_
 _August_
 - Organization Leadership and Information Analytics Fellowship Funding.
 
+_October_
+- Presented at the INFORMS Annual Meeting 2019.
+
+_December_
+- Proposal defense
+
+2020
+
+_January_
+- Working towards my dissertation
+
 To contact me, please email at aakash.saxena@colorado.edu.
+
+##### Acknowledgements
+I am really admired by my mentor and advisor, Prof. Jintae Lee, who has guided me through my PhD journey, making it one of the best learning experiences that I truely enjoyed. 
 
 ### Extra
 ##### Recently read books
 - _[How not to be wrong - the power of mathematics by Jordan Ellenberg](https://www.microsoft.com/en-us/research/video/how-not-to-be-wrong-the-power-of-mathematical-thinking/)_
 - _[The age of living machines by Susan Hockfield](https://www.youtube.com/watch?v=27a8wpmfsiU)_
-
-##### Recently read articles
-- _[Reasonable business research](https://hbr.org/2018/07/its-time-to-make-business-school-research-more-relevant)_ 
+- _[Animal Farm by George Orwell](https://www.youtube.com/watch?v=-4wze-K9G3A)_
