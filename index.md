@@ -11,8 +11,8 @@ For the fall 2020, I am seeking research-based opportunities in Information Syst
 #### Dissertation (D)
 _Ongoing_
 
-
 Advisor: Jintae Lee
+
 Quest: Can we identify semantics of a concept with respect to a specific context?
 - A method to measure context-specific semantics of a concept from a general-purpose corpus using word embedding space.
 
