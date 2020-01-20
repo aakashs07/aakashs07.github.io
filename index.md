@@ -4,7 +4,7 @@ I am a 5th-year Ph.D. Candidate in Information Management at the Leeds School of
 
 I am interested in understanding and applying distributed semantics embedded in word vector space models to build information analytic tools that identify associations between concepts in natural language. This research has several applications in:
 - Identifying differences in perceptions of a concept across cultures as embedded in natural language (e.g. gender perceptions of the concept of startup in US vs India)
-- Extracting biases associated with concepts (e.g. gender bias in the concept of a social role of business leader)
+- Extracting biases associated with concepts (e.g. gender bias in the concept of a social role such as business leader)
 - Demystifying perceptions about concepts in online news that are susceptible to deception (e.g. concept of unemployment) 
 
 For the fall 2020, I am seeking research-based opportunities in Information Science, Computational Social Science, AI Ethics and Fairness or Applications of NLP. 
