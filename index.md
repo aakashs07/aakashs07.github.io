@@ -2,7 +2,7 @@
 
 I am a 5th-year Ph.D. Candidate in Information Management at the Leeds School of Business, University of Colorado Boulder.
 
-I am interested in understanding distributional semantics, captured by word vector space models. My research work uses these models to build information analytic tools that identify associations between concepts in natural language. This research has several applications in:
+I am interested in understanding distributional semantics, captured by word vector space models. My research work uses these models to build information analytic tools that identify context-sensitive associations between concepts in natural language. This research has several applications in:
 - Identifying differences in perceptions of a concept across cultures as embedded in natural language (e.g. perceptions of the concept of startup in US vs India)
 - Extracting biases associated with concepts (e.g. gender bias in the concept of a social role such as business leader)
 - Demystifying perceptions about concepts in online news that are susceptible to deception (e.g. concept of unemployment) 
