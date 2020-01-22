@@ -9,9 +9,7 @@ I am interested in understanding and applying distributed semantics embedded in 
 
 For the fall 2020, I am seeking research-based opportunities in Information Science, Computational Social Science, AI Ethics and Fairness or Applications of NLP. 
 
-### Projects
-
-#### Dissertation (D)
+### Dissertation (D)
 _Ongoing_
 
 Advisor: Jintae Lee
@@ -19,19 +17,21 @@ Advisor: Jintae Lee
 Quest: Can we identify semantics of a concept with respect to a specific context?
 - A method to measure context-specific semantics of a concept from a general-purpose corpus using word embedding space.
 
+### Other Research Projects
+
 #### Theory driven (T)
-_Ongoing_
-
-Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?  (with Jintae Lee)
-- T1. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
-
-Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings? (with Jintae Lee)
-- T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)_
-
 _Completed_
 
 Quest: What are pragmatic/thematic categories that exist in Hotel Reviews? (with Jintae Lee)
-- T0. Text mining thematic categories for evaluative judgement: A test in the domain of hotel reviews and ratings.
+- T1. Text mining thematic categories for evaluative judgement: A test in the domain of hotel reviews and ratings.
+
+_Ongoing_
+
+Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?  (with Jintae Lee)
+- T2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
+
+Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings? (with Jintae Lee)
+- T3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)_
 
 #### Application driven (A)
 _Ongoing_
@@ -82,7 +82,7 @@ _January_
 To contact me, please email at aakash.saxena@colorado.edu.
 
 ### Acknowledgement
-I am really admired by my mentor and advisor, Prof. Jintae Lee, who has guided me through my PhD journey, making it one of the best learning experiences that I truely enjoyed. 
+I really admire my advisor, Prof. Jintae Lee, who has guided me through my PhD journey, making it one of the best learning experiences that I thoroughly enjoyed. 
 
 ### Extra
 ##### Recently read books
