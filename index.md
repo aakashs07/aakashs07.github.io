@@ -52,7 +52,7 @@ Quest: What are the features in authors' vocabulary that can be captured by word
 2019
 
 _March_
-- **A**2. Poster acceptance in _[INFORMS Business Analytics 2019 Conference](http://meetings2.informs.org/wordpress/analytics2019/)_.
+- **A**3. Poster acceptance in _[INFORMS Business Analytics 2019 Conference](http://meetings2.informs.org/wordpress/analytics2019/)_.
 - **T**3. Poster acceptance in _[IC2S2 2019 Conference](https://2019.ic2s2.org/)_.
 
 _April_
