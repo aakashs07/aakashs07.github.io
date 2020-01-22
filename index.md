@@ -43,6 +43,7 @@ Quest: How to tackle deception in news leading to dis- or misinformation?
 - **A**2. Demystifying perceptions in online news articles: A possible path to identifying news content susceptible to deception. 
 
 _Earlier Projects_
+
 Quest: What are the features in authors' vocabulary that can be captured by word embeddings?
 - **A**3. An authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings. _(Poster acceptance in INFORMS Business Analytics 2019 Conference)_
 
