@@ -7,7 +7,7 @@ I am interested in understanding distributional semantics, captured by word vect
 - Extracting biases associated with concepts (e.g. gender bias in the concept of a social role such as business leader)
 - Demystifying perceptions about concepts in online news that are susceptible to deception (e.g. concept of unemployment) 
 
-For the Fall of 2020, I am seeking research-based opportunities in Information Science, Computational Social Science, AI Ethics and Fairness, and Applications of NLP. 
+For the Fall of 2020, I am seeking opportunities in Applications of NLP or Text Mining. 
 
 ### Dissertation (D)
 _Ongoing_
@@ -80,12 +80,3 @@ _January_
 - Working towards my dissertation
 
 To contact me, please email at aakash.saxena@colorado.edu.
-
-### Acknowledgement
-I really admire my advisor, Prof. Jintae Lee, who has guided me through my PhD journey, making it one of the best learning experiences that I thoroughly enjoyed. 
-
-### Extra
-##### Recently read books
-- _[How not to be wrong - the power of mathematics by Jordan Ellenberg](https://www.microsoft.com/en-us/research/video/how-not-to-be-wrong-the-power-of-mathematical-thinking/)_
-- _[The age of living machines by Susan Hockfield](https://www.youtube.com/watch?v=27a8wpmfsiU)_
-- _[Animal Farm by George Orwell](https://www.youtube.com/watch?v=-4wze-K9G3A)_
