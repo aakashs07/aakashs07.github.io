@@ -79,4 +79,10 @@ _December_
 _January_
 - Working towards my dissertation
 
+_May_
+- Passed my final defense!
+
+_July_
+- Looking for jobs
+
 To contact me, please email at aakash.saxena@colorado.edu.
