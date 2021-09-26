@@ -1,21 +1,20 @@
 ## Aakash Saxena
 
-I am a 5th-year Ph.D. Candidate in Information Analytics at the Leeds School of Business, University of Colorado Boulder.
+Currently, I am working on exciting NLP projects at Sykes Enterprises, Inc. A few of these projects are:
+- Keyword Extraction,
+- Fine-tune agent-customer call type predictions using BERT,
+- Experiment with AI models for tasks, such as toxicity classification and face detection, using Tensorflow.js.
 
-I am interested in understanding distributional semantics, captured by word vector space models. My research work uses these models to build information analytic tools that identify context-sensitive associations between concepts in natural language. This research has several applications in:
-- Identifying differences in perceptions of a concept across cultures as embedded in natural language (e.g. perceptions of the concept of startup in US vs India)
-- Extracting biases associated with concepts (e.g. gender bias in the concept of a social role such as business leader)
-- Demystifying perceptions about concepts in online news that are susceptible to deception (e.g. concept of unemployment) 
+In August 2020, I completed my doctoral program in Information Analytics from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
-For the Fall of 2020, I am seeking opportunities in Applications of NLP or Text Mining. 
+For my Ph.D. dissertation, I have developed a semi-supervised method that defines concepts as word sets, contextualizes a text corpus based on a context using corpus refinement, creates a word embedding space from the refined corpus, and extracts context-sensitive semantics of concepts from the word-embedding space. Such a method can assist in capturing real-world perceptions embedded in natural language. Through my dissertation, I showcased one of its many applications by capturing perceptions associated with gender and social roles. If you would like to know more about my Ph.D. research project or about related research topics in Computational Social Science or Text Mining for Organizational Behavior, please connect with me at aakash.s.07@outlook.com.
+
+I am interested in understanding distributional semantics captured by deep learning models from natural language data. Application of this understanding in addressing business problems feeds my curiosity. If these sequence of words evoke a desire to connect with me, please do so. I will be happy to connect. Thank you :)
 
 ### Dissertation (D)
-_Ongoing_
 
-Advisor: Jintae Lee
-
-Quest: Can we identify semantics of a concept with respect to a specific context?
-- A method to measure context-specific semantics of a concept from a general-purpose corpus using word embedding space.
+Title: A Method to Extract Context-Sensitive Semantics of a Concept Using Word-Embedding Space and Its Application
+Committee Members: Prof. Jintae Lee (Advisor), Prof. David Hekman, Prof. Kai Larsen, Prof. James Martin, Prof. Young Jin Lee
 
 ### Other Research Projects
 
@@ -82,7 +81,5 @@ _January_
 _May_
 - Passed my final defense!
 
-_July_
-- Looking for jobs
-
-To contact me, please email at aakash.saxena@colorado.edu.
+_August_
+- Graduated! Thank you all for your support!
