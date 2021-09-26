@@ -14,6 +14,7 @@ I am interested in understanding distributional semantics captured by deep learn
 ### Dissertation (D)
 
 Title: A Method to Extract Context-Sensitive Semantics of a Concept Using Word-Embedding Space and Its Application
+
 Committee Members: Prof. Jintae Lee (Advisor), Prof. David Hekman, Prof. Kai Larsen, Prof. James Martin, Prof. Young Jin Lee
 
 ### Other Research Projects
