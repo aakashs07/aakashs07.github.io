@@ -5,7 +5,7 @@ Currently, I am working on exciting NLP projects at Sykes Enterprises, Inc. A fe
 - Fine-tune agent-customer call type predictions using BERT,
 - Experiment with AI models for tasks, such as toxicity classification and face detection, using Tensorflow.js.
 
-In August 2020, I completed my doctoral program in Information Analytics from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee. I am so thankful to my humble advisor who guided me throughout my Ph.D research. One fun fact about my advisor is that _[Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky)_ was one of his Ph.D. advisors at MIT.
+In August 2020, I completed my doctoral program in Information Analytics from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
 For my Ph.D. dissertation, I have developed a semi-supervised method that defines concepts as word sets, contextualizes a text corpus based on a context using corpus refinement, creates a word embedding space from the refined corpus, and extracts context-sensitive semantics of concepts from the word-embedding space. Such a method can assist in capturing real-world perceptions embedded in natural language. Through my dissertation, I showcased one of its many applications by capturing perceptions associated with gender and social roles. If you would like to know more about my Ph.D. research project or about related research topics in Computational Social Science or Text Mining for Organizational Behavior, please connect with me at aakash.s.07@outlook.com.
 
