@@ -91,7 +91,5 @@ _August_
 
 _October_
 - Ran my first 5k marathon! 
-My stats for 2021 Colfax 5k: 
-Timing - 26:04
-Overall rank - 76
-Age group based division rank - 14
+My _[stats](https://www.runcolfax.org/races/race-results/)_ for 2021 Colfax 5k: 
+Timing - 26:04 | Overall rank - 76 | Age group based division rank - 14
