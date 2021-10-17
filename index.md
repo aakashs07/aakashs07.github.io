@@ -84,3 +84,14 @@ _May_
 
 _August_
 - Graduated! Thank you all for your support!
+
+### News about my hobbies/ recreational experiences
+
+2021
+
+_October_
+- Ran my first 5k marathon! 
+My stats for 2021 Colfax 5k: 
+Timing - 26:04
+Overall rank - 76
+Age group based division rank - 14
