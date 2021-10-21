@@ -28,7 +28,7 @@ Quest: What are pragmatic/thematic categories that exist in Hotel Reviews? (with
 _Ongoing_
 
 Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?  (with Jintae Lee)
-- **T**2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Selected for oral presentation in INFORMS Annual Meeting 2019)_
+- **T**2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Invited for oral presentation in INFORMS Annual Meeting 2019)_
 
 Quest: Can we capture a semantic view of a social phenomenon such as stereotyping or judgements using word embeddings? (with Jintae Lee)
 - **T**3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)_
