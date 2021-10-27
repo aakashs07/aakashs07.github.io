@@ -85,6 +85,9 @@ _May_
 _August_
 - Graduated! Thank you all for your support!
 
+_September_
+- Started working at Sykes Enterprises, Inc.
+
 ### News about my hobbies/ recreational experiences
 
 2021
