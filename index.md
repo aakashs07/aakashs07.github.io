@@ -107,4 +107,4 @@ Timing - 26:04 | Overall rank - 76 | Division rank - 14
 
 _November_
 
-- 1st: I increased my pace from 7 miles per hour to 7.5 miles per hour and achieved 24 minutes and 50 seconds. Next session's target is 24 minutes.
+- 1st: Increased my pace from 7 miles per hour to 7.5 miles per hour and achieved 24 minutes and 50 seconds. Next session's target is 24 minutes.
