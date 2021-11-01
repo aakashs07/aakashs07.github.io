@@ -96,7 +96,15 @@ _October_
 - 17th: Ran my first 5k! 
 My stats for _[2021 Colfax 5k](https://www.runcolfax.org/races/race-results/)_: 
 Timing - 26:04 | Overall rank - 76 | Division rank - 14
-- 23rd: Registered for my second 5k!
+
+- 23rd: Registered for my second 5k - [ColderBoulder 5k](https://www.bolderboulder.com/)
+
 - 25th: Started 5k training in my alma mater's recreational center.
+
 - 26th: Viewed this youtube video on breathing - https://www.youtube.com/watch?v=s4WU4ghe7BY. I found it interesting that we need carbon dioxide to reduce the pH of our blood, which then triggers a chemical reaction that detaches oxygen molecules from hemoglobin so that these oxygen molecules can reach different parts of our body. A critical tip in this video is that we should take deep breaths at regular intervals to balance the amount of oxygen and carbon dioxide in our system. An imbalance in the amounts of oxygen and carbon dioxide during our run can cause fatigue, dizziness, etc.
-- 29th: Trained for 5k and achieved my best time of 24 minutes and 50 seconds. 
+
+- 29th: Achieved my best time of 25 minutes and 50 seconds for 5k.
+
+_November_
+
+- 1st: I increased my pace from 7 miles per hour to 7.5 miles per hour and achieved 24 minutes and 50 seconds. Next session's target is 24 minutes.
