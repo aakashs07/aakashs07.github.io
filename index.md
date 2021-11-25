@@ -109,3 +109,7 @@ Timing - 26:04 | Overall rank - 76 | Division rank - 14
 _November_
 
 - 1st: Increased my pace from 7 miles per hour to 7.5 miles per hour and achieved 24 minutes and 50 seconds. Next session's target is 24 minutes.
+
+- 23rd: I had to take a break from training but I got back. I ran at 8.5 miles per hour and achieved 23 minutes and 42 seconds. 
+
+- 24th: I ran at 6 miles per hour for 40 minutes. 
