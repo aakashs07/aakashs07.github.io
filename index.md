@@ -113,3 +113,9 @@ _November_
 - 23rd: I had to take a break from training but I got back. I ran at 8.5 miles per hour and achieved 23 minutes and 42 seconds. 
 
 - 24th: I ran at 6 miles per hour for 40 minutes. 
+
+_December_
+
+- 4th: Ran my second 5k! Improved my timings by 1 minute 29 seconds.
+My stats for [ColderBoulder 5k](https://www.bolderboulder.com/colder-overall-race-results/): 
+Timing - 24:35 | Rank - 86/1389
