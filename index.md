@@ -116,6 +116,6 @@ _November_
 
 _December_
 
-- 4th: Ran my second 5k! Improved my timings by 1 minute 29 seconds.
+- 4th: Ran my second 5k! Improved my timings by 1 minute 29 seconds. People were grouped into 14 races based on their earlier 10k performances.
 My stats for [ColderBoulder 5k](https://www.bolderboulder.com/colder-overall-race-results/): 
-Timing - 24:35 | Rank - 86/1389
+Timing - 24:35 | Rank in race #14 - 86/1389 | Overall rank - 362/2332
