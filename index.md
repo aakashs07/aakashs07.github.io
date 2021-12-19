@@ -88,6 +88,23 @@ _August_
 _September_
 - Started working at Sykes Enterprises, Inc.
 
+2021
+
+During this year, I worked on revisiting a few concepts of deep learning. I completed a few courses on Coursera. Andrew Ng has been a great resource and has put a lot efforts in democratizing AI. Kudos to him!! 
+
+I did not update this section of my page as I was busy working on developing a portfolio of NLP projects. Check _[this](https://github.com/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_ out - 
+
+At Sykes Enterprises, I worked on a few projects that allowed me to apply the knowledge gained through these courses. 
+
+_June_ 
+- Sykes Enterprises, Inc. was acquired by Sitel Group.
+
+_December_
+- Left Sitel Group. I am grateful to the data science team in which I worked as this experience provided me an exposure to AI problems faced by large corporations. I started working on data labelling with the Phillipines team, worked on applying topic modeling to extract topics from customer support interactions, developed and deployed keyword extraction tool on Microsoft Azure. Towards the end of my tenure here, I worked on overseeing data science modelling services for a major client.
+
+- 10th - Accepted job offer by Deception And Truth Analysis (D.A.T.A.). This is a role that I have been waiting for. During my Ph.D., I got interested in fake news, misinformation, and deception. I feel grateful and excited to join _[D.A.T.A.](https://deceptionandtruthanalysis.com/)_ as this role involves me to make societal contribution. My moto for the job is - "To modern day DeceptiCons, this is Autobot in pursuit." DeceptiCons refer to all deceptive entities.
+
+
 ### News about my hobbies/ recreational experiences
 
 2021
