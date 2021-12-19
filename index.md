@@ -87,7 +87,7 @@ _September_
 
 During this year, I worked on revisiting a few concepts of deep learning. I completed a few courses on Coursera. Andrew Ng has been a great resource and has put a lot efforts in democratizing AI. Kudos to him!! 
 
-I did not update this section of my page as I was busy working on developing a portfolio of NLP projects. Check _[this](https://github.com/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_ out.  
+Please note that I did not update this section of my page as I was busy working on developing a portfolio of NLP projects. Check _[this](https://github.com/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_ out.  
 
 At Sykes Enterprises, I worked on a few projects that allowed me to apply the knowledge gained through these courses. I worked on exciting NLP projects, such as Keyword Extraction, fine-tune agent-customer call type predictions using BERT, and experiment with AI models for tasks, such as toxicity classification and face detection, using Tensorflow.js.
 
