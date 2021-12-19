@@ -1,10 +1,5 @@
 ## Aakash Saxena
 
-Currently, I am working on exciting NLP projects at Sykes Enterprises, Inc. A few of these projects are:
-- Keyword Extraction,
-- Fine-tune agent-customer call type predictions using BERT,
-- Experiment with AI models for tasks, such as toxicity classification and face detection, using Tensorflow.js.
-
 In August 2020, I completed my doctoral program in Information Analytics from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
 For my Ph.D. dissertation, I have developed a semi-supervised method that defines concepts as word sets, contextualizes a text corpus based on a context using corpus refinement, creates a word embedding space from the refined corpus, and extracts context-sensitive semantics of concepts from the word-embedding space. Such a method can assist in capturing real-world perceptions embedded in natural language. Through my dissertation, I showcased one of its many applications by capturing perceptions associated with gender and social roles. If you would like to know more about my Ph.D. research project or about related research topics in Computational Social Science or Text Mining for Organizational Behavior, please connect with me at aakash.s.07@outlook.com.
@@ -92,9 +87,12 @@ _September_
 
 During this year, I worked on revisiting a few concepts of deep learning. I completed a few courses on Coursera. Andrew Ng has been a great resource and has put a lot efforts in democratizing AI. Kudos to him!! 
 
-I did not update this section of my page as I was busy working on developing a portfolio of NLP projects. Check _[this](https://github.com/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_ out - 
+I did not update this section of my page as I was busy working on developing a portfolio of NLP projects. Check _[this](https://github.com/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_ out.  
 
-At Sykes Enterprises, I worked on a few projects that allowed me to apply the knowledge gained through these courses. 
+At Sykes Enterprises, I worked on a few projects that allowed me to apply the knowledge gained through these courses. I worked on exciting NLP projects at Sykes Enterprises, Inc. A few of these projects are:
+- Keyword Extraction,
+- Fine-tune agent-customer call type predictions using BERT,
+- Experiment with AI models for tasks, such as toxicity classification and face detection, using Tensorflow.js.
 
 _June_ 
 - Sykes Enterprises, Inc. was acquired by Sitel Group.
