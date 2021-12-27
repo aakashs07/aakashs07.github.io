@@ -75,7 +75,7 @@ _January_
 - Working towards my dissertation
 
 _May_
-- Passed my final defense!
+- **D**. Passed my final defense!
 
 _August_
 - Graduated! Thank you all for your support!
