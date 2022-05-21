@@ -130,3 +130,10 @@ _December_
 - 4th: Ran my second 5k! Improved my timings by 1 minute 29 seconds. People were grouped into 14 races based on their earlier 10k performances.
 My stats for [ColderBoulder 5k](https://www.bolderboulder.com/colder-overall-race-results/): 
 Timing - 24:35 | Rank in race #14 - 86/1389 | Overall rank - 362/2332
+
+
+2022
+
+_May_
+
+- 20th: I visited VERSA in Downtown Denver. [Here](https://github.com/aakashs07/aakashs07.github.io/blob/master/_posts/22-05-20-visit%20to%20VERSA.md) is my blog post on NFTs.
