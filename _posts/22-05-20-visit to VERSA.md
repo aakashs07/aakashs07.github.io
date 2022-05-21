@@ -1,4 +1,6 @@
 
+20 May 2022
+
 What is NFT?
 
 Non-fungible tokens or NFTs are created for tracking ownership of digit assets. When trading bitcoin with another bitcoin, we will end up having the same thing. But, when we trade NFTs, we will have completely different thing.
