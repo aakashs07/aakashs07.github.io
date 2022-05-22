@@ -26,7 +26,7 @@ The metadata field of NFT generally stores the data. This metadata field can be 
 
 It was great to experience a first-of-its-kind art gallery that showcases NFTs. These NFTs can be bought and sold using Ethereum since these they are part of the Ethereum Blockchain. [OpenSea.io](https://opensea.io/assets) is a platform where we can trade these NFTs.
 
-
+***
 
 Sources:
 1. https://www.r3.com/blockchain-101/
