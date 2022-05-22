@@ -1,7 +1,5 @@
 ---
 layout: post
-author:
-  name: AS
 title: "Future of Art"
 date: 2022-05-20
 tags: 
