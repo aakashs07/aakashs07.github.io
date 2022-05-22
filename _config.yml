@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-relative-links
 title: Welcome to Aakash's homepage!
 description: Feel free to bookmark this to keep an eye on my project updates.
+relative_links: 
+  enabled: true
+  collections: true
+  
