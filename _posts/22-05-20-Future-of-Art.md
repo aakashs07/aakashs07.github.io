@@ -20,7 +20,7 @@ There are a few benefits of buying NFTs. Since NFTs are based on blockchain tech
 
 Even before we talk about Blockchain, let us understand distributed ledger technology (DLT) since blockchain is a type of DLT. A distributed ledger is a database that is consensually shared across multiple sites and are accessible by multiple people, as opposed to centralized ledger located at a single location. A DLT has a decentralized system of processing and authenticating digital interactions, such as online transactions. Blockchain is a type of DLT, implemented in a specific way. It encrypts a transaction using an immutable cryptographic signature called hash. Multiple transactions are grouped together as a block for efficient authentication process and each block includes a hash of the previous one, forming a chain of blocks of transaction data. That is why the name blockchain.
 
-Since NFTs are based on this blockchain technology, they act as secure method of transacting digital assets. Even if you copy digital art, for example, NFTs come with proof of ownership of the original piece. You can look into this [weblink](https://postergrind.com/how-to-check-the-ownership-of-an-nft-7-methods/) for more details on checking ownership of NFTs.
+Since NFTs are based on this blockchain technology, they act as secure method of transacting digital assets. Even if you copy digital art, for example, NFTs come with proof of ownership of the original piece. You can look [here](https://postergrind.com/how-to-check-the-ownership-of-an-nft-7-methods/) for more details on checking ownership of NFTs.
 
 NFTs are tokens. So, how is a digital artwork associated with NFT?
 
