@@ -34,3 +34,4 @@ Sources:
 3. https://technative.io/nft-is-enough-why-digital-art-is-much-more-than-copy-and-paste/
 4. https://www.investopedia.com/pros-and-cons-of-investing-in-nfts-5220290
 5. https://www.fio.one/2021/10/25/the-storage-method-of-nft-artworks-that-you-cant-ignore/
+6. https://cointelegraph.com/explained/why-is-ethereum-used-for-nfts
