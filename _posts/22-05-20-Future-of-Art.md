@@ -1,9 +1,14 @@
 ---
 layout: post
+author:
+  name: AS
 title: "Future of Art"
-author: AS
 date: 2022-05-20
-categories: CRYPTO FUTURE
+tags: 
+- crypto
+- future
+- digital art
+- hologram
 ---
 
 My first evert visit to VERSA - Future of Art! 
