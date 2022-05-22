@@ -2,7 +2,6 @@
 layout: post
 title: "Future of Art"
 date: 2022-05-20
-categories: CRYPTO FUTURE
 ---
 
 My visit to VERSA - Future of Art
