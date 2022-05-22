@@ -1,3 +1,6 @@
+
+domain: aakashs07.github.io
+url: https://aakashs07.github.io
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-relative-links
