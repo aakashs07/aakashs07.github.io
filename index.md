@@ -1,5 +1,7 @@
 ## Aakash Saxena
 
+I am working as NLP Software Engineer at D.A.T.A, Inc.
+
 In August 2020, I completed my doctoral program in Information Analytics, currently named as Organizational Behavior and Information Systems (OBIS), from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
 For my Ph.D. dissertation, I have developed a semi-supervised method that defines concepts as word sets, contextualizes a text corpus based on a context using corpus refinement, creates a word embedding space from the refined corpus, and extracts context-sensitive semantics of concepts from the word-embedding space. Such a method can assist in capturing real-world perceptions embedded in natural language. Through my dissertation, I showcased one of its many applications by capturing perceptions associated with gender and social roles. If you would like to know more about my Ph.D. research project or about related research topics in Computational Social Science or Text Mining for Organizational Behavior, please connect with me at aakash.s.07@outlook.com.
@@ -136,4 +138,4 @@ Timing - 24:35 | Rank in race #14 - 86/1389 | Overall rank - 362/2332
 
 _May_
 
-- 20th: I visited VERSA in Downtown Denver. I got interested in NFTs. [Here](https://github.com/aakashs07/aakashs07.github.io/blob/master/_posts/22-05-20-visit%20to%20VERSA.md) is my blog post on NFTs.
+- 20th: I visited VERSA in Downtown Denver. I got interested in NFTs. [Here](https://github.com/aakashs07/aakashs07.github.io/blob/master/_posts/22-05-20-Future-of-Art.md) is my blog post on NFTs.
