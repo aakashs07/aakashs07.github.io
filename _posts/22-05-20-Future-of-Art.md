@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Future of Art"
+author: AS
 date: 2022-05-20
+categories: CRYPTO FUTURE
 ---
 
 My first evert visit to VERSA - Future of Art! 
@@ -24,7 +26,7 @@ NFTs are tokens. So, how is a digital artwork associated with NFT?
 
 The metadata field of NFT generally stores the data. This metadata field can be used to store digital artwork data. It can also be used to store hash value data of these artworks if an artist chooses to store digital artwork at a different location (e.g. different blockchain or centralized server) because of the high cost of storing large files on the blockchain. You can read more about this [here](https://www.fio.one/2021/10/25/the-storage-method-of-nft-artworks-that-you-cant-ignore/).
 
-It was great to experience a first-of-its-kind art gallery that showcases NFTs. These NFTs can be bought and sold using Ethereum since these they are part of the Ethereum Blockchain. [OpenSea.io](https://opensea.io/assets) is a platform where we can trade these NFTs.
+It was great to experience a first-of-its-kind art gallery that showcases NFTs. These NFTs can be bought and sold using Ethereum since they are part of the Ethereum Blockchain. [OpenSea.io](https://opensea.io/assets) is a platform where we can trade these NFTs.
 
 ***
 
