@@ -1,6 +1,6 @@
 ## Aakash Saxena
 
-I am working as NLP Software Engineer at D.A.T.A, Inc.
+I am working as an NLP Software Engineer at D.A.T.A, Inc.
 
 In August 2020, I completed my doctoral program in Information Analytics, currently named as Organizational Behavior and Information Systems (OBIS), from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
@@ -138,4 +138,4 @@ Timing - 24:35 | Rank in race #14 - 86/1389 | Overall rank - 362/2332
 
 _May_
 
-- 20th: I visited VERSA in Downtown Denver. I got interested in NFTs. [Here](https://github.com/aakashs07/aakashs07.github.io/blob/master/_posts/22-05-20-Future-of-Art.md) is my blog post on NFTs.
+- 20th: I visited VERSA in Downtown Denver. I got interested in NFTs. [Here](https://aakashs07.github.io/2022/05/20/Future-of-Art.html) is my blog post on NFTs.
