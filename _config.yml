@@ -3,7 +3,7 @@ domain: aakashs07.github.io
 url: https://aakashs07.github.io
 theme: jekyll-theme-minimal
 plugins:
-  - jekyll-remote-theme
+  - minima
 title: Welcome to Aakash's homepage!
 description: An NLP researcher/software engineer who uses natural language processing to detect deception. 
   
