@@ -136,4 +136,4 @@ Timing - 24:35 | Rank in race #14 - 86/1389 | Overall rank - 362/2332
 
 _May_
 
-- 20th: I visited VERSA in Downtown Denver. [Here](https://github.com/aakashs07/aakashs07.github.io/blob/master/_posts/22-05-20-visit%20to%20VERSA.md) is my blog post on NFTs.
+- 20th: I visited VERSA in Downtown Denver. I got interested in NFTs. [Here](https://github.com/aakashs07/aakashs07.github.io/blob/master/_posts/22-05-20-visit%20to%20VERSA.md) is my blog post on NFTs.
