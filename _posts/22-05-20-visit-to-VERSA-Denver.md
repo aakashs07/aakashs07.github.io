@@ -1,8 +1,10 @@
-
+---
 layout: post
 title: "My visit to VERSA - Future of Art "
 date: 2022-05-20 11:30:00 -0000
 categories: Crypto Future
+---
+
 
 **20 May 2022**
 
