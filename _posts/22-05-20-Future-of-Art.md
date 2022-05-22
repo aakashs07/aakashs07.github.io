@@ -10,7 +10,7 @@ tags:
   - media
 ---
 
-My first evert visit to VERSA - Future of Art! 
+My first visit to VERSA - Future of Art! 
 
 On May 20, 2022, I visited [VERSE: Art of Future](https://versenftcryptoart.com/denver/) in downtown Denver. I wanted to understand the use of digital art instead of physical art that some of us have seen in art exhibitions. One can trade NFTs in exchange of Ethereum to own digital artworks, displayed at VERSA. I was able to see NFTs using Microsoft's HoloLens 2, provided at the art gallery. Hence, I got curious about NFTs.
 
