@@ -2,11 +2,8 @@
 layout: post
 title: "My visit to VERSA - Future of Art "
 date: 2022-05-20
-categories: Crypto Future
+categories: CRYPTO FUTURE
 ---
-
-
-**20 May 2022**
 
 What is NFT?
 
