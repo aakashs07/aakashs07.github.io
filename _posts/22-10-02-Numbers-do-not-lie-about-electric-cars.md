@@ -36,6 +36,9 @@ involve greenhouse gas emissions.
 These arguments make complete sense to me. If one has to make a decision of buying a car, 
 then we should consider these arguments. 
 
+***
+
+
 Sources:
 1. Energy efficiency percentages - https://www.energycouncil.com.au/analysis/evs-are-they-really-more-efficient/
 2. City of Aspen with 100 percent renewable energy - https://www.cityofaspen.com/1202/Renewable-Energy
