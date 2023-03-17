@@ -12,7 +12,7 @@ tags:
   - Evaluation_metric
 ---
   
-Keyphrase extraction is a classical task in NLP. It has several applications in Text summarization, Question and Answering, Reading Comprehension, and more broadly in Information Retrieval. Below, I have summarized 19 evaluation metrics for keyword/keyphrase extraction.
+Keyphrase extraction has become an important NLP task which has been used in several applications, such as Text Summarization, Text Generation, Question and Answering, Reading Comprehension, Opinion Mining, and Information Retrieval. It becomes important to evaluate the performance of this task on a robust evaluation metric. For this purpose, I have identified 19 evaluation metrics for keyword/keyphrase extraction, summarized in the tabular format.
 
 ![keyphrase_extraction_eval_metrics_summary](keyphrase_extraction_eval_metrics_summary.png)
 
