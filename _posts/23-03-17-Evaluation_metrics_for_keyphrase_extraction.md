@@ -1,0 +1,23 @@
+---
+layout: post
+author: AS
+title: "Evaluation Metrics for keyphrase extraction"
+date: 2023-03-17
+tags: 
+  - Natural_Language_Processing
+  - NLP
+  - Keyphrase_extraction
+  - Keyword_extraction
+  - F1score
+  - Evaluation_metric
+---
+  
+Keyphrase extraction is a classical task in NLP. It has several applications in Text summarization, Question and Answering, Reading Comprehension, and more broadly in Information Retrieval. Below, I have summarized 19 evaluation metrics for keyword/keyphrase extraction.
+
+
+![img.png](img.png)
+
+
+
+
+
