@@ -22,8 +22,6 @@ _Completed_
 Quest: What are pragmatic/thematic categories that exist in Hotel Reviews? (with Jintae Lee)
 - **T**1. Text mining thematic categories for evaluative judgement: A test in the domain of hotel reviews and ratings.
 
-_Ongoing_
-
 Quest: What are pragmatic/thematic categories? What is the relation between the attributes of such categories and frame elements of a semantic frame?  (with Jintae Lee)
 - **T**2. A method that uses the word embedding space to capture pragmatic categories, i.e., categories defined by sharing pragmatic contexts such as of evaluating leaders or products. _(Invited for oral presentation in INFORMS Annual Meeting 2019)_
 
@@ -31,15 +29,12 @@ Quest: Can we capture a semantic view of a social phenomenon such as stereotypin
 - **T**3. Perceived Leader-Gender Role-Congruity: A text-mining tool to measure the degree of congruence between leader-role and gender-role perceptions in the business context. _(Poster acceptance in International Conference on Computational Social Science 2019)_
 
 #### Application driven (A)
-_Ongoing_
 
 Quest: What are some polarity cues in news articles?
 - **A**1. Comparison of opinions in embedding spaces trained on subjective and objective corpora.
 
 Quest: How to tackle deception in news leading to dis- or misinformation?
 - **A**2. Demystifying perceptions in online news articles: A possible path to identifying news content susceptible to deception. 
-
-_Earlier Projects_
 
 Quest: What are the features in authors' vocabulary that can be captured by word embeddings?
 - **A**3. An authorship attribution method to identify features to classify fiction-based authors’ texts using word embeddings. _(Poster acceptance in INFORMS Business Analytics 2019 Conference)_
@@ -101,6 +96,24 @@ _December_
 
 - 10th - Accepted job offer by Deception And Truth Analysis (_[D.A.T.A.](https://deceptionandtruthanalysis.com/)_). This is a role that I have been waiting for. During my Ph.D., I got interested in fake news, misinformation, and deception. I feel grateful and excited to join D.A.T.A. as this role involves me to make societal contribution. My moto for the job is - "To modern day DeceptiCons, this is Autobot in pursuit.". DeceptiCons refer to all deceptive entities.
 
+2022
+
+During this year, 
+- I worked on a few NLP projects that became part of our company's core products. 
+- I worked on NLP tasks such as text classification, document classification, language detection, keyphrase extraction. 
+- I became an active participant of Deception Research Society. 
+
+2023
+
+_March_
+
+- 3rd: I submitted an abstract on "Towards Context-Sensitive Semantics of Linguistic Cues for Deception" in IC2S2 2023. 
+
+- 17th: I added a few evaluation metrics to my list for evaluating keyphrase extraction task [here](https://aakashs07.github.io/2023/03/17/Evaluation-metrics-for-keyphrase-extraction.html).
+
+- 28th - Could I be a great prompt engineer? Please check out my interaction (as part of D.A.T.A., Inc.) with ChatGPT on deception [here](https://deceptionandtruthanalysis.com/insights/f/chatgpt-and-deception-part-1)
+
+
 ### News about my hobbies/ recreational experiences
 
 2021
@@ -144,8 +157,4 @@ _October_
 
 - 2nd: Interesting arguments about EVs from the book "Numbers don't lie" [here](https://aakashs07.github.io/2022/10/02/Numbers-do-not-lie-about-electric-cars.html).
 
-2023
 
-_March_
-
-- 17th: I added a few evaluation metrics to my list for evaluating keyphrase extraction task [here](https://aakashs07.github.io/2023/03/17/Evaluation-metrics-for-keyphrase-extraction.html).
