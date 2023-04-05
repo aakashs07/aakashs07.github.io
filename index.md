@@ -111,7 +111,7 @@ _March_
 
 - 17th: I added a few evaluation metrics to my list for evaluating keyphrase extraction task [here](https://aakashs07.github.io/2023/03/17/Evaluation-metrics-for-keyphrase-extraction.html).
 
-- 28th: Prompt engineering demonstration - Please check out my interaction (as part of D.A.T.A., Inc.) with ChatGPT on deception [here](https://deceptionandtruthanalysis.com/insights/f/chatgpt-and-deception-part-1).
+- 28th: Prompt engineering demonstration -> Please check out my interaction (as part of D.A.T.A., Inc.) with ChatGPT on deception [here](https://deceptionandtruthanalysis.com/insights/f/chatgpt-and-deception-part-1).
 
 ---
 
