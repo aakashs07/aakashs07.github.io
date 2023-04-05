@@ -114,6 +114,8 @@ _March_
 - 28th: Prompt engineering demonstration - Please check out my interaction (as part of D.A.T.A., Inc.) with ChatGPT on deception [here](https://deceptionandtruthanalysis.com/insights/f/chatgpt-and-deception-part-1).
 
 
+
+
 ### News about my hobbies/ recreational experiences
 
 2021
