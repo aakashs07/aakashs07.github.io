@@ -107,11 +107,11 @@ During this year,
 
 _March_
 
-- 3rd: I submitted an abstract on "Towards Context-Sensitive Semantics of Linguistic Cues for Deception" in IC2S2 2023. 
+- 3rd: I submitted an abstract on "Towards Context-Sensitive Semantics of Linguistic Cues for Deception" in [IC2S2 2023](https://www.ic2s2.org). 
 
 - 17th: I added a few evaluation metrics to my list for evaluating keyphrase extraction task [here](https://aakashs07.github.io/2023/03/17/Evaluation-metrics-for-keyphrase-extraction.html).
 
-- 28th - Could I be a great prompt engineer? Please check out my interaction (as part of D.A.T.A., Inc.) with ChatGPT on deception [here](https://deceptionandtruthanalysis.com/insights/f/chatgpt-and-deception-part-1)
+- 28th: Prompt engineering demonstration - Please check out my interaction (as part of D.A.T.A., Inc.) with ChatGPT on deception [here](https://deceptionandtruthanalysis.com/insights/f/chatgpt-and-deception-part-1).
 
 
 ### News about my hobbies/ recreational experiences
