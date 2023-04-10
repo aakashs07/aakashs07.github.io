@@ -1,6 +1,6 @@
 ## Aakash Saxena
 
-I am working as an NLP Software Engineer at D.A.T.A., Inc. I apply NLP tools and techniques for enhancing product experience. I am also involved in R&D to operationalize deception detection concepts using NLP. 
+I am working as an NLP Software Engineer at D.A.T.A., Inc., since January 2022. I am involved in R&D to operationalize deception detection concepts using NLP. I also apply NLP tools and techniques for enhancing product experience. 
 
 In August 2020, I completed my doctoral program in Information Analytics, currently named as Organizational Behavior and Information Systems (OBIS), from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
