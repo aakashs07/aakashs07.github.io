@@ -113,6 +113,10 @@ _March_
 
 - 28th: Prompt engineering demonstration -> Please check out my interaction (as part of D.A.T.A., Inc.) with ChatGPT on deception [here](https://deceptionandtruthanalysis.com/insights/f/chatgpt-and-deception-part-1).
 
+_November_
+
+- 8th: One of my ideas "Towards the Semantics of Darkness" got accepted in DeceptiCon 2023 conference for a panel presentation. I am excited about this idea because it deals with using semantic features, extracted from pretrained models with Deep neural architectures like BERT, to categorize dark triad behaviors from the non-dark triad ones.
+
 ---
 
 ### News about my hobbies/ recreational experiences
