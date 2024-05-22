@@ -6,7 +6,7 @@ In August 2020, I completed my doctoral program in Information Analytics, curren
 
 For my Ph.D. dissertation, I have developed a semi-supervised method that defines concepts as word sets, contextualizes a text corpus based on a context using corpus refinement, creates a word embedding space from the refined corpus, and extracts context-sensitive semantics of concepts from the word-embedding space. Such a method can assist in capturing real-world perceptions embedded in natural language. Through my dissertation, I showcased one of its many applications by capturing perceptions associated with gender and social roles. If you would like to know more about my Ph.D. research project or about related research topics, please connect with me at aakash.s.07@outlook.com.
 
-I am interested in understanding distributional semantics captured by deep learning models from natural language data. Please feel free to connect if you would like to chat, discuss, collaborate on any projects related but not limited to distributional semantics, such as word vector space models.
+I engage in either exploring or creating NLP algorithms to better understand nuances of our language. Please see _[here](https://github.com/aakashs07/nlp_projects)_ for a few projects.
 
 ### Dissertation (D)
 
