@@ -26,7 +26,7 @@ _February_
 
 - 23rd: Presented "Semantics of darkness: A Text-based analysis" at the final round of the White Paper Competition
   
-- 16th: Selected as a top 5 finalist in the Wharton People Analytics White Paper Competition
+- 16th: Selected as a top five finalist in the Wharton People Analytics White Paper Competition
 
 
 2023
