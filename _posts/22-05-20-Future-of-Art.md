@@ -16,7 +16,7 @@ On May 20, 2022, I visited [VERSE: Art of Future](https://versenftcryptoart.com/
 
 What is NFT?
 
-Non-fungible tokens or NFTs are created for tracking ownership of digit assets. When trading bitcoin with another bitcoin, we will end up having the same thing. But, when we trade NFTs, we will have completely different thing.
+Non-fungible tokens or NFTs are created for tracking ownership of digital assets. When trading bitcoin with another bitcoin, we will end up having the same thing. But, when we trade NFTs, we will have completely different thing.
 
 Why do we need NFT?
 
