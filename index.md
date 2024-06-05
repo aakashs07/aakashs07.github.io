@@ -2,7 +2,7 @@
 
 I am working as an NLP Software Engineer at D.A.T.A., Inc., since January 2022. I am involved in R&D to operationalize deception detection concepts using NLP. I also apply NLP tools and techniques for enhancing product experience. 
 
-In August 2020, I completed my doctoral program in Information Analytics, currently named as Organizational Behavior and Information Systems (OBIS), from the Leeds School of Business at the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
+In August 2020, I completed my doctoral program in Information Analytics from University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
 For my [Ph.D. dissertation](https://search.proquest.com/openview/4befd1d62e7d29a2f4149a816720beea/1?pq-origsite=gscholar&cbl=44156), I have developed a semi-supervised method that defines concepts as word sets, contextualizes a text corpus based on a context using corpus refinement, creates a word embedding space from the refined corpus, and extracts context-sensitive semantics of concepts from the word-embedding space. Such a method can assist in capturing real-world perceptions embedded in natural language. Through my dissertation, I showcased one of its many applications by capturing perceptions associated with gender and social roles. If you would like to know more about my Ph.D. research project or about related research topics, please connect with me at aakash.s.07@outlook.com.
 
