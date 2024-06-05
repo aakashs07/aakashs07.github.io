@@ -63,7 +63,7 @@ At Sykes Enterprises, I worked on a few projects that allowed me to apply the kn
 _December_
 - Left Sitel Group. I am grateful to the data science team as this experience provided me an exposure to AI problems faced by a large corporation. I started working on data labelling with the Phillipines team, worked on applying topic modeling to extract topics from customer support interactions, developed and deployed keyword extraction tool on Microsoft Azure. Towards the end of my tenure here, I worked on overseeing data science modeling services for a UK-based major client.
 
-- 10th - Accepted job offer by Deception And Truth Analysis (_[D.A.T.A.](https://deceptionandtruthanalysis.com/)_). This is a role that I have been waiting for. During my Ph.D., I got interested in fake news, misinformation, and deception. I feel grateful and excited to join D.A.T.A. as this role involves me to make societal contribution. My moto for the job is - "To modern day DeceptiCons, this is Autobot in pursuit.". DeceptiCons refer to all deceptive entities.
+- 10th - Accepted job offer by Deception And Truth Analysis (_[D.A.T.A.](https://deceptionandtruthanalysis.com/)_). This is a role that I have been waiting for. During my Ph.D., I got interested in fake news, misinformation, and deception. I feel grateful and excited to join D.A.T.A. as this role involves me to make societal contribution.
 
 _June_ 
 - Sykes Enterprises, Inc. was acquired by Sitel Group.
