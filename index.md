@@ -20,7 +20,7 @@ I have worked on the following projects earlier.
 
 _May_
 
-- 3rd: Internally presented a deception detection ML model, identifying features relevant for both deception and truthfulness
+- 3rd: Internally presented a ML-based deception detection model, identifying features relevant for both deception and truthfulness
 
 _February_
 
