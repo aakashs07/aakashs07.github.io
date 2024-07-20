@@ -11,7 +11,7 @@ I like exploring machines to better understand nuances of our language. As we ar
 I have worked on the following projects earlier.
 
 - _[How to capture authors' linguistic style? - participated in a kaggle competition](https://nbviewer.org/github/aakashs07/nlp_projects/blob/master/kaggle_spooky_author_identification.ipynb)_
-- _[A sneak peak into error analysis of Naïve Bayes algorithm](https://nbviewer.org/github/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_
+- _[A sneak peek into error analysis of Naïve Bayes algorithm](https://nbviewer.org/github/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_
 
 ### News about my research activities
 
