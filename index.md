@@ -18,9 +18,12 @@ I have worked on the following projects earlier.
 
 2024
 
+_Aug_
+
+- 14th: Practiced implementing _[Trei data structure](https://github.com/aakashs07/nlp_projects/blob/master/trei_ds_prac).
 _May_
 
-- 3rd: Internally presented a ML-based deception detection model, identifying features relevant for both deceptiveness and truthfulness
+- 3rd: Internally presented a ML-based deception detection model, identifying features relevant for both deceptiveness and truthfulness.
 
 _February_
 
