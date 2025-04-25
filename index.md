@@ -1,12 +1,14 @@
 ## Aakash Saxena
 
-I worked as an NLP Software Engineer at D.A.T.A., Inc., since January 2022 until July 2024. I was involved in R&D to operationalize deception detection concepts using NLP. I also applied NLP tools and techniques for enhancing product experience. 
+Currently, I am working as a Senior NLP Engineer (AI Engineer) at EVS Pvt. Ltd. Here, I develop and enhance AI features for the GenAI team, test them across multiple environments, and release them to production. My work includes end-to-end delivery of models and tooling that power generative AI applications.
+
+Earlier, I worked as an NLP Software Engineer at D.A.T.A., Inc., since January 2022 until July 2024. I was involved in R&D to operationalize deception detection concepts using NLP. I also applied NLP tools and techniques for enhancing product experience. 
 
 In August 2020, I completed my doctoral program in Information Analytics from the University of Colorado Boulder. I was mentored and advised by Prof. Jintae Lee.
 
 For my [Ph.D. dissertation](https://search.proquest.com/openview/4befd1d62e7d29a2f4149a816720beea/1?pq-origsite=gscholar&cbl=44156), I have developed a semi-supervised method that defines concepts as word sets, contextualizes a text corpus based on a context using corpus refinement, creates a word embedding space from the refined corpus, and extracts context-sensitive semantics of concepts from the word-embedding space. Such a method can assist in capturing real-world perceptions embedded in natural language. Through my dissertation, I showcased one of its many applications by capturing perceptions associated with gender and social roles. If you would like to know more about my Ph.D. research project or about related research topics, please connect with me at aakash.s.07@outlook.com.
 
-I like exploring machines to better understand nuances of our language. As we are diving deeper into the Generative AI era, I am getting more curious about LLMs' capability of encoding context-sensitive semantics of concepts, safety of AI algorithms, and deploying responsible AI strategies. 
+I like developing/exploring machines to better understand nuances of our language. As we are diving deeper into the Generative AI era, I am getting more curious about LLMs' capability of encoding context-sensitive semantics of concepts, Technical AI safety, and deploying responsible AI strategies. 
 
 I have worked on the following projects earlier.
 
@@ -18,7 +20,11 @@ I have worked on the following projects earlier.
 
 2024
 
-_Aug_
+_December_
+
+- 2nd: Started working at EVS Pvt. Ltd. as Sr. NLP Engineer. This is the next step in my journey to engage in releasing features in production at a larger scale than in my previous role.
+
+_August_
 
 - 14th: Practiced implementing [Trei data structure](https://github.com/aakashs07/nlp_projects/blob/master/trei_ds_prac).
 
