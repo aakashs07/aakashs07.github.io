@@ -1,6 +1,6 @@
 ## Aakash Saxena
 
-Currently, I am working as a Senior NLP Engineer (AI Engineer) at EVS Pvt. Ltd. Here, I develop and enhance AI features for the GenAI team, test them across multiple environments, and release them to production. My work includes end-to-end delivery of models and tooling that power generative AI applications.
+Currently, I am working as a Senior AI Engineer at EVS Pvt. Ltd. Here, I develop and enhance AI features for the GenAI team, test them across multiple environments, and release them to production. My work includes end-to-end delivery of models and tooling that power generative AI applications.
 
 Earlier, I worked as an NLP Software Engineer at D.A.T.A., Inc., since January 2022 until July 2024. I was involved in R&D to operationalize deception detection concepts using NLP. I also applied NLP tools and techniques for enhancing product experience. 
 
