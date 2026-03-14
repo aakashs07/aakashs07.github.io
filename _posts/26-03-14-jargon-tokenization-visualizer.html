@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: post
 title: "The Jargon Tokenization Problem"
 date: 2026-03-14
 ---
 {% raw %}
+
+<meta charset="UTF-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
@@ -258,33 +260,40 @@ date: 2026-03-14
       <span class="jtv-label">FINTECH NLP RESEARCH</span>
     </div>
     <div class="jtv-title">The Jargon Tokenization Problem</div>
-    <div class="jtv-subtitle">How domain-specific finance terms fragment into weak tokens — and why your RAG pipeline suffers for it.</div>
+    <div class="jtv-subtitle">How domain-specific finance terms fragment into weak tokens &mdash; and why your RAG pipeline suffers for it.</div>
   </div>
 
   <!-- Tabs -->
   <div class="jtv-tabs">
-    <button class="jtv-tab active" onclick="jtv.tab(0)">01 TOKEN BREAKDOWN</button>
-    <button class="jtv-tab" onclick="jtv.tab(1)">02 JARGON vs PLAIN</button>
-    <button class="jtv-tab" onclick="jtv.tab(2)">03 RAG INCONSISTENCY</button>
-    <button class="jtv-tab" onclick="jtv.tab(3)">04 SIMILARITY HEATMAP</button>
+    <button class="jtv-tab active" onclick="JTV.tab(0)">01 TOKEN BREAKDOWN</button>
+    <button class="jtv-tab" onclick="JTV.tab(1)">02 JARGON vs PLAIN</button>
+    <button class="jtv-tab" onclick="JTV.tab(2)">03 RAG INCONSISTENCY</button>
+    <button class="jtv-tab" onclick="JTV.tab(3)">04 SIMILARITY HEATMAP</button>
   </div>
 
   <!-- Panel 0: Token Breakdown -->
   <div class="jtv-panel active" id="jtv-p0">
     <div class="jtv-section-title"><div class="jtv-section-bar"></div><span class="jtv-section-name">Token Breakdown</span></div>
-    <div class="jtv-section-sub">// jargon words fragment into semantically weak sub-tokens</div>
-    <label class="jtv-field-label">INPUT SENTENCE</label>
+    <div class="jtv-section-sub">// real cl100k_base tiktoken output &mdash; jargon fragments into semantically weak sub-tokens</div>
+    <label class="jtv-field-label">SELECT SAMPLE</label>
     <div class="jtv-pills" id="jtv-samples"></div>
-    <textarea id="jtv-input" rows="2" oninput="jtv.tokenize()"></textarea>
-    <div class="jtv-token-box" style="margin-top:16px;">
-      <div class="jtv-box-label">TOKENIZED OUTPUT</div>
+    <div style="background:#0d1929;border:1px solid #1e293b;border-radius:6px;padding:10px 13px;margin-bottom:14px;">
+      <div style="font-size:9px;color:#475569;letter-spacing:1px;margin-bottom:6px;">INPUT TEXT</div>
+      <div id="jtv-sentence" style="font-size:13px;color:#e2e8f0;line-height:1.6;"></div>
+    </div>
+    <div style="background:#0d1929;border:1px solid #1e293b;border-radius:6px;padding:10px 13px;margin-bottom:14px;">
+      <div style="font-size:9px;color:#475569;letter-spacing:1px;margin-bottom:6px;">TOKEN IDs <span style="color:#334155;">(cl100k_base)</span></div>
+      <div id="jtv-id-strip" style="display:flex;flex-wrap:wrap;gap:2px;"></div>
+    </div>
+    <div class="jtv-token-box">
+      <div class="jtv-box-label">TOKENIZED OUTPUT <span style="color:#334155;">&mdash; token text &middot; id below</span></div>
       <div id="jtv-output" style="display:flex;flex-wrap:wrap;align-items:flex-start;"></div>
     </div>
     <div class="jtv-insight blue">
       <span class="hi-blue">Key insight:</span>
-      Jargon like <em>rehypothecation</em> splits into tokens like <code>["re","hyp","oth","ec","ation"]</code> —
-      none of which carry the full financial meaning. Common words like <em>bank</em> or <em>risk</em>
-      stay intact, giving them far stronger semantic anchoring in the embedding space.
+      Jargon like <em>rehypothecation</em> splits into <code>5 tokens [312, 79343, 8942, 762, 367]</code> &mdash;
+      none of which carry its full financial meaning. Common words like <em>bank</em> or <em>fund</em>
+      stay as single tokens, giving them far stronger semantic anchoring in the embedding space.
     </div>
   </div>
 
@@ -296,7 +305,7 @@ date: 2026-03-14
     <div class="jtv-insight blue" style="margin-top:16px;">
       <span class="hi-blue">Takeaway:</span>
       Plain English terms tokenize into whole, meaningful words. Jargon terms splinter into
-      sub-word fragments that appear across unrelated contexts during training — weakening domain specificity.
+      sub-word fragments that appear across unrelated contexts during training &mdash; weakening domain specificity.
     </div>
   </div>
 
@@ -306,14 +315,14 @@ date: 2026-03-14
     <div class="jtv-section-sub">// same query, different retrieved docs across runs</div>
     <label class="jtv-field-label" style="margin-top:4px;">QUERY</label>
     <input type="text" id="jtv-rag-query" value="What is the risk of rehypothecation in collateralization?">
-    <button class="jtv-run-btn" id="jtv-run-btn" onclick="jtv.runRAG()" style="margin-top:14px;">▶ RUN 3× RETRIEVAL</button>
+    <button class="jtv-run-btn" id="jtv-run-btn" onclick="JTV.runRAG()" style="margin-top:14px;">&#9654; RUN 3&times; RETRIEVAL</button>
     <div id="jtv-rag-output">
       <div class="jtv-rag-empty">⟳ Run retrieval to see inconsistency across calls</div>
     </div>
     <div class="jtv-insight red" style="margin-top:14px;">
       <span class="hi-red">Why this happens:</span>
       When jargon tokens are weak, query embeddings are less stable. Small shifts in context
-      window or softmax sampling change which docs rank in top-k — producing non-deterministic
+      window or softmax sampling change which docs rank in top-k &mdash; producing non-deterministic
       retrieval for the exact same query.
     </div>
   </div>
@@ -321,7 +330,7 @@ date: 2026-03-14
   <!-- Panel 3: Heatmap -->
   <div class="jtv-panel" id="jtv-p3">
     <div class="jtv-section-title"><div class="jtv-section-bar"></div><span class="jtv-section-name">Token Similarity Heatmap</span></div>
-    <div class="jtv-section-sub">// intra-word token cosine similarity — jargon tokens have poor internal coherence</div>
+    <div class="jtv-section-sub">// intra-word token cosine similarity &mdash; jargon tokens have poor internal coherence</div>
     <label class="jtv-field-label" style="margin-top:4px;">SELECT JARGON WORD</label>
     <div class="jtv-pills" id="jtv-hm-pills"></div>
     <div class="jtv-hm-wrapper">
@@ -337,7 +346,7 @@ date: 2026-03-14
     </div>
     <div class="jtv-insight green" style="margin-top:14px;">
       <span class="hi-green">Why it matters:</span>
-      Sub-tokens of jargon words learn associations from their appearances in <em>other</em> words —
+      Sub-tokens of jargon words learn associations from their appearances in <em>other</em> words &mdash;
       not the jargon itself. So <code>"ation"</code> is shared across thousands of words,
       diluting domain specificity and reducing embedding quality of the full term.
     </div>
@@ -346,35 +355,126 @@ date: 2026-03-14
 
 <script>
 const JTV = (() => {
+  // Real cl100k_base tiktoken output
   const JARGON = {
-    rehypothecation:  { tokens: ["re","hyp","oth","ec","ation"],    plain: "re-pledging collateral" },
-    collateralization:{ tokens: ["col","lat","eral","iz","ation"],   plain: "securing with assets" },
-    securitization:   { tokens: ["secur","iti","z","ation"],         plain: "asset bundling" },
-    deleveraging:     { tokens: ["de","lever","aging"],              plain: "reducing debt exposure" },
-    tranching:        { tokens: ["tran","ching"],                    plain: "slicing risk layers" },
-    novation:         { tokens: ["nov","ation"],                     plain: "contract substitution" },
-    contango:         { tokens: ["cont","ango"],                     plain: "futures premium" },
-    backwardation:    { tokens: ["back","ward","ation"],             plain: "futures discount" },
-    hypothecation:    { tokens: ["hyp","oth","ec","ation"],          plain: "pledging collateral" },
-    haircut:          { tokens: ["hair","cut"],                      plain: "value reduction" },
+    rehypothecation:  { tokens: ["re","hyp","oth","ec","ation"],    ids: [312,79343,8942,762,367],    plain: "re-pledging collateral" },
+    collateralization:{ tokens: ["collateral","ization"],           ids: [52508,2065],                plain: "securing with assets" },
+    securitization:   { tokens: ["se","cur","it","ization"],        ids: [513,2407,275,2065],         plain: "asset bundling" },
+    deleveraging:     { tokens: ["De","lever","aging"],             ids: [1951,72905,4210],           plain: "reducing debt exposure" },
+    tranches:         { tokens: ["tr","anches"],                    ids: [490,83281],                 plain: "risk layers" },
+    novation:         { tokens: ["Nov","ation"],                    ids: [19480,367],                 plain: "contract substitution" },
+    contango:         { tokens: ["Cont","ango"],                    ids: [825,5281],                  plain: "futures premium" },
+    backwardation:    { tokens: ["backward","ation"],               ids: [22900,28655],               plain: "futures discount" },
+    hypothecation:    { tokens: ["hypoth","ec","ation"],            ids: [12860,45455,762],           plain: "pledging collateral" },
+    haircut:          { tokens: ["haircut"],                        ids: [86824],                     plain: "value reduction" },
   };
 
+  // Exact sentences + tiktoken output verbatim
   const SAMPLES = [
-    "The bank used rehypothecation to fund collateralization of new positions.",
-    "Deleveraging triggered backwardation across securitization tranches.",
-    "Novation replaced hypothecation in the updated haircut agreement.",
-    "Contango markets complicated the securitization of commodity futures.",
+    {
+      text: "The bank used rehypothecation to fund collateralization of new positions.",
+      tokenized: [
+        { word: "The",               tokens: ["The"],          ids: [791],         isJargon: false },
+        { word: "bank",              tokens: [" bank"],        ids: [6201],        isJargon: false },
+        { word: "used",              tokens: [" used"],        ids: [1511],        isJargon: false },
+        { word: "rehypothecation",   tokens: [" re","hyp","oth","ec","ation"], ids: [312,79343,8942,762,367], isJargon: true },
+        { word: "to",                tokens: [" to"],          ids: [311],         isJargon: false },
+        { word: "fund",              tokens: [" fund"],        ids: [3887],        isJargon: false },
+        { word: "collateralization", tokens: [" collateral","ization"], ids: [52508,2065], isJargon: true },
+        { word: "of",                tokens: [" of"],          ids: [315],         isJargon: false },
+        { word: "new",               tokens: [" new"],         ids: [502],         isJargon: false },
+        { word: "positions.",        tokens: [" positions","."], ids: [10093,13],  isJargon: false },
+      ]
+    },
+    {
+      text: "Deleveraging triggered backwardation across securitization tranches.",
+      tokenized: [
+        { word: "Deleveraging",  tokens: ["De","lever","aging"],    ids: [1951,72905,4210],   isJargon: true },
+        { word: "triggered",     tokens: [" triggered"],            ids: [22900],             isJargon: false },
+        { word: "backwardation", tokens: [" backward","ation"],     ids: [28655,367],         isJargon: true },
+        { word: "across",        tokens: [" across"],               ids: [4028],              isJargon: false },
+        { word: "securitization",tokens: [" se","cur","it","ization"], ids: [513,2407,275,2065], isJargon: true },
+        { word: "tranches.",     tokens: [" tr","anches","."],      ids: [490,83281,13],      isJargon: true },
+      ]
+    },
+    {
+      text: "Novation replaced hypothecation in the updated haircut agreement.",
+      tokenized: [
+        { word: "Novation",      tokens: ["Nov","ation"],           ids: [19480,367],         isJargon: true },
+        { word: "replaced",      tokens: [" replaced"],             ids: [12860],             isJargon: false },
+        { word: "hypothecation", tokens: [" hypoth","ec","ation"],  ids: [45455,762,367],     isJargon: true },
+        { word: "in",            tokens: [" in"],                   ids: [304],               isJargon: false },
+        { word: "the",           tokens: [" the"],                  ids: [279],               isJargon: false },
+        { word: "updated",       tokens: [" updated"],              ids: [6177],              isJargon: false },
+        { word: "haircut",       tokens: [" haircut"],              ids: [86824],             isJargon: true },
+        { word: "agreement.",    tokens: [" agreement","."],        ids: [9306,13],           isJargon: false },
+      ]
+    },
+    {
+      text: "Contango markets complicated the securitization of commodity futures.",
+      tokenized: [
+        { word: "Contango",      tokens: ["Cont","ango"],           ids: [825,5281],          isJargon: true },
+        { word: "markets",       tokens: [" markets"],              ids: [11987],             isJargon: false },
+        { word: "complicated",   tokens: [" complicated"],          ids: [17395],             isJargon: false },
+        { word: "the",           tokens: [" the"],                  ids: [279],               isJargon: false },
+        { word: "securitization",tokens: [" se","cur","it","ization"], ids: [513,2407,275,2065], isJargon: true },
+        { word: "of",            tokens: [" of"],                   ids: [315],               isJargon: false },
+        { word: "commodity",     tokens: [" commodity"],            ids: [38983],             isJargon: false },
+        { word: "futures.",      tokens: [" futures","."],          ids: [37923,13],          isJargon: false },
+      ]
+    },
   ];
 
+  // Real tiktoken cl100k_base output for RAG corpus docs
   const RAG_DOCS = [
-    { id:1, title:"Basel III Collateral Rules",    snip:"Rehypothecation limits under Basel III restrict the reuse of client collateral in repo chains..." },
-    { id:2, title:"Repo Market Mechanics",         snip:"Haircut calculations in repo markets depend on collateral quality, duration, and issuer credit..." },
-    { id:3, title:"CDO Tranching Guide",           snip:"Securitization tranching distributes credit risk across senior and junior note classes..." },
-    { id:4, title:"Futures Curve Dynamics",        snip:"Contango and backwardation reflect market expectations about future spot prices and carry..." },
-    { id:5, title:"Derivatives Novation SOP",      snip:"Novation transfers obligations between counterparties, replacing the original bilateral contract..." },
-    { id:6, title:"Leverage Ratio Framework",      snip:"Deleveraging cycles often correlate with credit contraction and systemic liquidity stress..." },
-    { id:7, title:"Margin & Collateral Ops",       snip:"Hypothecation agreements define the lender's right over pledged securities and margin assets..." },
-    { id:8, title:"Risk Weight Assets Guide",      snip:"Collateralization reduces RWA but introduces rehypothecation risk and liquidity concentration..." },
+    {
+      id: 1, title: "Basel III Collateral Rules",
+      snip: "Rehypothecation limits under Basel III restrict the reuse of client collateral in repo chains...",
+      tokens: ["Re","hyp","oth","ec","ation"," limits"," under"," Basel"," III"," restrict"," the"," reuse"," of"," client"," collateral"," in"," repo"," chains","..."],
+      jargonSpans: [[0,5]]
+    },
+    {
+      id: 2, title: "Repo Market Mechanics",
+      snip: "Haircut calculations in repo markets depend on collateral quality, duration, and issuer credit...",
+      tokens: ["Hair","cut"," calculations"," in"," repo"," markets"," depend"," on"," collateral"," quality",","," duration",","," and"," issuer"," credit","..."],
+      jargonSpans: [[0,2]]
+    },
+    {
+      id: 3, title: "CDO Tranching Guide",
+      snip: "Securitization tranching distributes credit risk across senior and junior note classes...",
+      tokens: ["Sec","ur","it","ization"," tr","anch","ing"," distributes"," credit"," risk"," across"," senior"," and"," junior"," note"," classes","..."],
+      jargonSpans: [[0,4],[4,7]]
+    },
+    {
+      id: 4, title: "Futures Curve Dynamics",
+      snip: "Contango and backwardation reflect market expectations about future spot prices and carry...",
+      tokens: ["Cont","ango"," and"," backward","ation"," reflect"," market"," expectations"," about"," future"," spot"," prices"," and"," carry","..."],
+      jargonSpans: [[0,2],[3,5]]
+    },
+    {
+      id: 5, title: "Derivatives Novation SOP",
+      snip: "Novation transfers obligations between counterparties, replacing the original bilateral contract...",
+      tokens: ["Nov","ation"," transfers"," obligations"," between"," counterpart","ies",","," replacing"," the"," original"," bilateral"," contract","..."],
+      jargonSpans: [[0,2]]
+    },
+    {
+      id: 6, title: "Leverage Ratio Framework",
+      snip: "Deleveraging cycles often correlate with credit contraction and systemic liquidity stress...",
+      tokens: ["De","lever","aging"," cycles"," often"," correlate"," with"," credit"," contraction"," and"," systemic"," liquidity"," stress","..."],
+      jargonSpans: [[0,3]]
+    },
+    {
+      id: 7, title: "Margin & Collateral Ops",
+      snip: "Hypothecation agreements define the lender's right over pledged securities and margin assets...",
+      tokens: ["H","yp","oth","ec","ation"," agreements"," define"," the"," lender","'s"," right"," over"," pledged"," securities"," and"," margin"," assets","..."],
+      jargonSpans: [[0,5]]
+    },
+    {
+      id: 8, title: "Risk Weight Assets Guide",
+      snip: "Collateralization reduces RWA but introduces rehypothecation risk and liquidity concentration...",
+      tokens: ["Coll","ateral","ization"," reduces"," R","WA"," but"," introduces"," re","hyp","oth","ec","ation"," risk"," and"," liquidity"," concentration","..."],
+      jargonSpans: [[0,3],[8,13]]
+    },
   ];
 
   const COLORS = ["#f59e0b","#ef4444","#8b5cf6","#06b6d4","#10b981","#f97316","#ec4899","#6366f1"];
@@ -384,45 +484,55 @@ const JTV = (() => {
     const r = Math.round(239 + (16  - 239) * v);
     const g = Math.round(68  + (185 -  68) * v);
     const b = Math.round(68  + (129 -  68) * v);
-    return `rgb(${r},${g},${b})`;
+    return "rgb(" + r + "," + g + "," + b + ")";
   }
 
-  function tokenizeWord(w) {
-    const low = w.toLowerCase().replace(/[^a-z]/g,"");
-    if (JARGON[low]) return { tokens: JARGON[low].tokens, isJargon: true };
-    if (w.length <= 4) return { tokens: [w], isJargon: false };
-    const m = Math.ceil(w.length / 2);
-    return { tokens: [w.slice(0,m), w.slice(m)], isJargon: false };
+  function escHtml(s) {
+    return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
   }
+
+  let activeSample = 0;
 
   function tab(i) {
-    document.querySelectorAll("#jtv-root .jtv-tab").forEach((t,j) => t.classList.toggle("active", i===j));
-    document.querySelectorAll("#jtv-root .jtv-panel").forEach((p,j) => p.classList.toggle("active", i===j));
+    document.querySelectorAll("#jtv-root .jtv-tab").forEach(function(t,j){ t.classList.toggle("active", i===j); });
+    document.querySelectorAll("#jtv-root .jtv-panel").forEach(function(p,j){ p.classList.toggle("active", i===j); });
   }
 
-  function tokenize() {
-    const sentence = document.getElementById("jtv-input").value;
-    const out = document.getElementById("jtv-output");
+  function renderSample(idx) {
+    activeSample = idx;
+    var sample = SAMPLES[idx];
+    var out = document.getElementById("jtv-output");
+    document.getElementById("jtv-sentence").textContent = sample.text;
     out.innerHTML = "";
-    sentence.split(/\s+/).filter(Boolean).forEach((word, wi) => {
-      const { tokens, isJargon } = tokenizeWord(word);
-      const color = COLORS[wi % COLORS.length];
-      const grp = document.createElement("div");
+
+    var allIds = [];
+    sample.tokenized.forEach(function(w){ w.ids.forEach(function(id){ allIds.push(id); }); });
+    document.getElementById("jtv-id-strip").innerHTML = allIds.map(function(id){
+      return "<span style='padding:2px 5px;margin:1px;border-radius:2px;font-size:10px;background:#1e293b;border:1px solid #334155;color:#475569;'>" + id + "</span>";
+    }).join("");
+
+    sample.tokenized.forEach(function(item, wi) {
+      var color = COLORS[wi % COLORS.length];
+      var grp = document.createElement("div");
       grp.className = "jtv-word-group jtv-anim";
       grp.style.animationDelay = (wi * 0.04) + "s";
 
-      const lbl = document.createElement("span");
-      lbl.className = "jtv-word-label " + (isJargon ? "jargon" : "plain");
-      lbl.textContent = word;
+      var lbl = document.createElement("span");
+      lbl.className = "jtv-word-label " + (item.isJargon ? "jargon" : "plain");
+      lbl.textContent = item.word;
       grp.appendChild(lbl);
 
-      const row = document.createElement("div");
+      var row = document.createElement("div");
       row.className = "jtv-tokens-row";
-      tokens.forEach((tok, ti) => {
-        const chip = document.createElement("span");
+
+      item.tokens.forEach(function(tok, ti) {
+        var wrap = document.createElement("div");
+        wrap.style.cssText = "display:flex;flex-direction:column;align-items:center;gap:2px;";
+
+        var chip = document.createElement("span");
         chip.className = "jtv-tok";
-        chip.textContent = tok;
-        if (isJargon) {
+        chip.textContent = tok.replace(/^ /, "");
+        if (item.isJargon) {
           chip.style.background = color + "22";
           chip.style.border = "1px solid " + color;
           chip.style.color = color;
@@ -431,14 +541,22 @@ const JTV = (() => {
           chip.style.border = "1px solid #334155";
           chip.style.color = "#94a3b8";
         }
-        row.appendChild(chip);
+
+        var idTag = document.createElement("span");
+        idTag.textContent = item.ids[ti];
+        idTag.style.cssText = "font-size:9px;color:" + (item.isJargon ? color + "99" : "#33415599") + ";";
+
+        wrap.appendChild(chip);
+        wrap.appendChild(idTag);
+        row.appendChild(wrap);
       });
+
       grp.appendChild(row);
 
-      if (isJargon) {
-        const warn = document.createElement("span");
+      if (item.isJargon) {
+        var warn = document.createElement("span");
         warn.className = "jtv-jargon-warn";
-        warn.textContent = "⚠ JARGON";
+        warn.textContent = "\u26a0 JARGON \u2014 " + item.tokens.length + " token" + (item.tokens.length > 1 ? "s" : "");
         grp.appendChild(warn);
       }
       out.appendChild(grp);
@@ -446,91 +564,158 @@ const JTV = (() => {
   }
 
   function buildSamples() {
-    const el = document.getElementById("jtv-samples");
-    SAMPLES.forEach((s, i) => {
-      const b = document.createElement("button");
-      b.className = "jtv-pill" + (i===0 ? " active" : "");
-      b.textContent = "Sample " + (i+1);
-      b.onclick = () => {
-        document.querySelectorAll("#jtv-samples .jtv-pill").forEach(p => p.classList.remove("active"));
+    var el = document.getElementById("jtv-samples");
+    SAMPLES.forEach(function(s, i) {
+      var b = document.createElement("button");
+      b.className = "jtv-pill" + (i === 0 ? " active" : "");
+      b.textContent = "Sample " + (i + 1);
+      b.onclick = function() {
+        document.querySelectorAll("#jtv-samples .jtv-pill").forEach(function(p){ p.classList.remove("active"); });
         b.classList.add("active");
-        document.getElementById("jtv-input").value = s;
-        tokenize();
+        renderSample(i);
       };
       el.appendChild(b);
     });
-    document.getElementById("jtv-input").value = SAMPLES[0];
-    tokenize();
+    renderSample(0);
   }
 
   function buildJVP() {
-    const grid = document.getElementById("jtv-jvp-grid");
-    Object.entries(JARGON).forEach(([word, {tokens, plain}]) => {
-      const card = document.createElement("div");
+    var grid = document.getElementById("jtv-jvp-grid");
+    Object.keys(JARGON).forEach(function(word) {
+      var data = JARGON[word];
+      var card = document.createElement("div");
       card.className = "jtv-jvp-card";
-      const plainToks = plain.split(" ");
-      card.innerHTML = `
-        <div class="jtv-jvp-header">
-          <div class="jtv-jvp-cell">
-            <div class="jtv-jvp-type" style="color:#ef4444">JARGON</div>
-            <div class="jtv-jvp-word" style="color:#fbbf24">${word}</div>
-          </div>
-          <div class="jtv-jvp-cell">
-            <div class="jtv-jvp-type" style="color:#10b981">PLAIN</div>
-            <div class="jtv-jvp-word" style="color:#6ee7b7">${plain}</div>
-          </div>
-        </div>
-        <div class="jtv-jvp-body">
-          <div class="jtv-jvp-tokens">
-            ${tokens.map(t=>`<span class="jtv-jvp-tok" style="background:#ef444411;border:1px solid #ef444433;color:#ef4444">${t}</span>`).join("")}
-            <div class="jtv-jvp-count">${tokens.length} tokens</div>
-          </div>
-          <div class="jtv-jvp-tokens">
-            ${plainToks.map(t=>`<span class="jtv-jvp-tok" style="background:#10b98111;border:1px solid #10b98133;color:#10b981">${t}</span>`).join("")}
-            <div class="jtv-jvp-count">${plainToks.length} tokens</div>
-          </div>
-        </div>`;
+
+      // Header
+      var hdr = document.createElement("div");
+      hdr.className = "jtv-jvp-header";
+
+      var cellJ = document.createElement("div"); cellJ.className = "jtv-jvp-cell";
+      var typeJ = document.createElement("div"); typeJ.className = "jtv-jvp-type"; typeJ.style.color = "#ef4444"; typeJ.textContent = "JARGON";
+      var wordJ = document.createElement("div"); wordJ.className = "jtv-jvp-word"; wordJ.style.color = "#fbbf24"; wordJ.textContent = word;
+      cellJ.appendChild(typeJ); cellJ.appendChild(wordJ);
+
+      var cellP = document.createElement("div"); cellP.className = "jtv-jvp-cell";
+      var typeP = document.createElement("div"); typeP.className = "jtv-jvp-type"; typeP.style.color = "#10b981"; typeP.textContent = "PLAIN";
+      var wordP = document.createElement("div"); wordP.className = "jtv-jvp-word"; wordP.style.color = "#6ee7b7"; wordP.textContent = data.plain;
+      cellP.appendChild(typeP); cellP.appendChild(wordP);
+
+      hdr.appendChild(cellJ); hdr.appendChild(cellP);
+
+      // Body
+      var body = document.createElement("div"); body.className = "jtv-jvp-body";
+
+      var tokJ = document.createElement("div"); tokJ.className = "jtv-jvp-tokens";
+      data.tokens.forEach(function(t, i) {
+        var chip = document.createElement("span"); chip.className = "jtv-jvp-tok";
+        chip.style.cssText = "background:#ef444411;border:1px solid #ef444433;color:#ef4444;";
+        chip.textContent = t.replace(/^ /, "");
+        var idSpan = document.createElement("span");
+        idSpan.style.cssText = "font-size:9px;color:#47556988;margin-right:3px;";
+        idSpan.textContent = data.ids[i];
+        tokJ.appendChild(chip); tokJ.appendChild(idSpan);
+      });
+      var countJ = document.createElement("div"); countJ.className = "jtv-jvp-count";
+      countJ.textContent = data.tokens.length + " token" + (data.tokens.length > 1 ? "s" : "");
+      tokJ.appendChild(countJ);
+
+      var tokP = document.createElement("div"); tokP.className = "jtv-jvp-tokens";
+      data.plain.split(" ").forEach(function(t) {
+        var chip = document.createElement("span"); chip.className = "jtv-jvp-tok";
+        chip.style.cssText = "background:#10b98111;border:1px solid #10b98133;color:#10b981;";
+        chip.textContent = t;
+        tokP.appendChild(chip);
+      });
+      var countP = document.createElement("div"); countP.className = "jtv-jvp-count";
+      countP.textContent = data.plain.split(" ").length + " token" + (data.plain.split(" ").length > 1 ? "s" : "");
+      tokP.appendChild(countP);
+
+      body.appendChild(tokJ); body.appendChild(tokP);
+      card.appendChild(hdr); card.appendChild(body);
       grid.appendChild(card);
     });
   }
 
+  function makeDocCard(doc, runNum) {
+    var card = document.createElement("div");
+    card.className = "jtv-rag-card jtv-anim";
+    card.style.animationDelay = ((runNum - 1) * 0.1) + "s";
+
+    var hdr = document.createElement("div"); hdr.className = "jtv-rag-card-header";
+    var runLbl = document.createElement("span"); runLbl.className = "jtv-rag-run-label"; runLbl.textContent = "RUN " + runNum;
+    var sub = document.createElement("span"); sub.className = "jtv-rag-sub"; sub.textContent = "top-3 docs";
+    hdr.appendChild(runLbl); hdr.appendChild(sub);
+    card.appendChild(hdr);
+
+    doc.forEach(function(d) {
+      var docDiv = document.createElement("div"); docDiv.className = "jtv-rag-doc";
+
+      var titleDiv = document.createElement("div"); titleDiv.className = "jtv-rag-doc-title";
+      titleDiv.textContent = "#" + d.id + " " + d.title;
+
+      // Token strip for this doc
+      var tokRow = document.createElement("div");
+      tokRow.style.cssText = "display:flex;flex-wrap:wrap;gap:2px;margin:5px 0;";
+      var isInJargon = new Array(d.tokens.length).fill(false);
+      d.jargonSpans.forEach(function(span) {
+        for (var k = span[0]; k < span[1]; k++) isInJargon[k] = true;
+      });
+      d.tokens.forEach(function(tok, ti) {
+        var chip = document.createElement("span");
+        chip.style.cssText = "padding:1px 4px;border-radius:2px;font-size:9px;font-weight:600;" +
+          (isInJargon[ti]
+            ? "background:#ef444411;border:1px solid #ef444433;color:#ef4444;"
+            : "background:#1e293b;border:1px solid #334155;color:#475569;");
+        chip.textContent = tok.replace(/^ /, "");
+        tokRow.appendChild(chip);
+      });
+
+      var snipDiv = document.createElement("div"); snipDiv.className = "jtv-rag-doc-snip";
+      snipDiv.textContent = d.snip;
+
+      docDiv.appendChild(titleDiv);
+      docDiv.appendChild(tokRow);
+      docDiv.appendChild(snipDiv);
+      card.appendChild(docDiv);
+    });
+    return card;
+  }
+
   async function runRAG() {
-    const btn = document.getElementById("jtv-run-btn");
-    const out = document.getElementById("jtv-rag-output");
-    btn.disabled = true; btn.textContent = "▶ RUNNING RETRIEVAL...";
-    out.innerHTML = "<div class='jtv-rag-empty' style='animation:jtv-fadein 0.3s'>Fetching documents...</div>";
-    const runs = [];
-    for (let i = 0; i < 3; i++) {
-      await new Promise(r => setTimeout(r, 700 + i * 400));
-      const shuffled = [...RAG_DOCS].sort(() => Math.random() - 0.5);
-      runs.push({ run: i+1, docs: shuffled.slice(0,3) });
+    var btn = document.getElementById("jtv-run-btn");
+    var out = document.getElementById("jtv-rag-output");
+    btn.disabled = true; btn.textContent = "\u25b6 RUNNING RETRIEVAL...";
+    out.innerHTML = "";
+    var spinner = document.createElement("div");
+    spinner.className = "jtv-rag-empty";
+    spinner.textContent = "Fetching documents...";
+    out.appendChild(spinner);
+
+    var runs = [];
+    for (var i = 0; i < 3; i++) {
+      await new Promise(function(r){ setTimeout(r, 700 + i * 400); });
+      var shuffled = RAG_DOCS.slice().sort(function(){ return Math.random() - 0.5; });
+      runs.push({ run: i + 1, docs: shuffled.slice(0, 3) });
     }
-    out.innerHTML = `<div class="jtv-rag-grid">
-      ${runs.map(({run, docs}) => `
-        <div class="jtv-rag-card jtv-anim" style="animation-delay:${(run-1)*0.1}s">
-          <div class="jtv-rag-card-header">
-            <span class="jtv-rag-run-label">RUN ${run}</span>
-            <span class="jtv-rag-sub">top-3 docs</span>
-          </div>
-          ${docs.map(d => `
-            <div class="jtv-rag-doc">
-              <div class="jtv-rag-doc-title">#${d.id} ${d.title}</div>
-              <div class="jtv-rag-doc-snip">${d.snip.slice(0,75)}...</div>
-            </div>`).join("")}
-        </div>`).join("")}
-    </div>`;
-    btn.disabled = false; btn.textContent = "▶ RUN 3× RETRIEVAL";
+
+    out.innerHTML = "";
+    var grid = document.createElement("div"); grid.className = "jtv-rag-grid";
+    runs.forEach(function(r) {
+      grid.appendChild(makeDocCard(r.docs, r.run));
+    });
+    out.appendChild(grid);
+    btn.disabled = false; btn.textContent = "\u25b6 RUN 3\u00d7 RETRIEVAL";
   }
 
   function buildHMPills() {
-    const el = document.getElementById("jtv-hm-pills");
-    Object.keys(JARGON).forEach(word => {
-      const b = document.createElement("button");
+    var el = document.getElementById("jtv-hm-pills");
+    Object.keys(JARGON).forEach(function(word) {
+      var b = document.createElement("button");
       b.className = "jtv-pill" + (word === hmWord ? " active" : "");
       b.textContent = word;
-      b.onclick = () => {
+      b.onclick = function() {
         hmWord = word;
-        document.querySelectorAll("#jtv-hm-pills .jtv-pill").forEach(p => p.classList.remove("active"));
+        document.querySelectorAll("#jtv-hm-pills .jtv-pill").forEach(function(p){ p.classList.remove("active"); });
         b.classList.add("active");
         renderHeatmap();
       };
@@ -539,43 +724,95 @@ const JTV = (() => {
     renderHeatmap();
   }
 
+  var REAL_SCORES = {
+    rehypothecation: [
+      [1.00, 0.43, 0.59, 0.27, 0.23],
+      [0.43, 1.00, 0.37, 0.28, 0.25],
+      [0.59, 0.37, 1.00, 0.37, 0.37],
+      [0.27, 0.28, 0.37, 1.00, 0.37],
+      [0.23, 0.25, 0.37, 0.37, 1.00]
+    ],
+    collateralization: [
+      [1.00, 0.27, 0.27],
+      [0.27, 1.00, 0.36],
+      [0.27, 0.36, 1.00]
+    ],
+    securitization: [
+      [1.00, 0.21, 0.26, 0.29],
+      [0.21, 1.00, 0.31, 0.20],
+      [0.26, 0.31, 1.00, 0.31],
+      [0.29, 0.20, 0.31, 1.00]
+    ],
+    deleveraging: [
+      [1.00, 0.26, 0.19],
+      [0.26, 1.00, 0.16],
+      [0.19, 0.16, 1.00]
+    ],
+    tranches: [
+      [1.00, 0.31, 0.46],
+      [0.31, 1.00, 0.28],
+      [0.46, 0.28, 1.00]
+    ],
+    novation: [
+      [1.00, 0.00],
+      [0.00, 1.00]
+    ],
+    contango: [
+      [1.00, 0.16],
+      [0.16, 1.00]
+    ],
+    backwardation: [
+      [1.00, 0.23],
+      [0.23, 1.00]
+    ],
+    hypothecation: [
+      [1.00, 0.34, 0.30, 0.25],
+      [0.34, 1.00, 0.37, 0.37],
+      [0.30, 0.37, 1.00, 0.37],
+      [0.25, 0.37, 0.37, 1.00]
+    ],
+    haircut: [
+      [1.00, 0.41],
+      [0.41, 1.00]
+    ]
+  };
+
   function renderHeatmap() {
-    const tokens = JARGON[hmWord].tokens;
-    const n = tokens.length;
+    var tokens = JARGON[hmWord].tokens.map(function(t){ return t.replace(/^ /, ""); });
     document.getElementById("jtv-hm-title").textContent =
-      `COSINE SIMILARITY BETWEEN SUB-TOKENS OF "${hmWord.toUpperCase()}"`;
+      "COSINE SIMILARITY BETWEEN SUB-TOKENS OF \"" + hmWord.toUpperCase() + "\"";
 
-    const scores = tokens.map((_, i) =>
-      tokens.map((_, j) => {
-        if (i === j) return 1.0;
-        return +Math.max(0.05, 0.82 - Math.abs(i-j)*0.17 + (Math.random()*0.1)).toFixed(2);
-      })
-    );
+    var scores = REAL_SCORES[hmWord];
 
-    const grid = document.getElementById("jtv-hm-grid");
+    var grid = document.getElementById("jtv-hm-grid");
     grid.className = "jtv-hm-grid";
-    grid.style.gridTemplateColumns = `48px ${tokens.map(()=>"60px").join(" ")}`;
+    grid.style.gridTemplateColumns = "56px " + tokens.map(function(){ return "62px"; }).join(" ");
     grid.innerHTML = "";
 
-    // corner spacer
-    grid.appendChild(Object.assign(document.createElement("div"), {}));
-    // column headers
-    tokens.forEach(t => {
-      const h = document.createElement("div");
+    // Corner spacer
+    grid.appendChild(document.createElement("div"));
+
+    // Column headers
+    tokens.forEach(function(t) {
+      var h = document.createElement("div");
       h.className = "jtv-hm-col-label"; h.textContent = t;
       grid.appendChild(h);
     });
-    // rows
-    tokens.forEach((rowTok, ri) => {
-      const lbl = document.createElement("div");
+
+    // Rows
+    tokens.forEach(function(rowTok, ri) {
+      var lbl = document.createElement("div");
       lbl.className = "jtv-hm-row-label"; lbl.textContent = rowTok;
       grid.appendChild(lbl);
-      scores[ri].forEach(score => {
-        const cell = document.createElement("div");
+
+      scores[ri].forEach(function(score) {
+        var cell = document.createElement("div");
         cell.className = "jtv-hm-cell";
         cell.style.background = heatColor(score);
         cell.style.color = score > 0.5 ? "#fff" : "#00000099";
         cell.textContent = score.toFixed(2);
+        cell.onmouseenter = function(){ cell.style.transform = "scale(1.08)"; };
+        cell.onmouseleave = function(){ cell.style.transform = "scale(1)"; };
         grid.appendChild(cell);
       });
     });
@@ -587,7 +824,7 @@ const JTV = (() => {
     buildHMPills();
   }
 
-  return { tab, tokenize, runRAG, init };
+  return { tab: tab, renderSample: renderSample, runRAG: runRAG, init: init };
 })();
 
 document.addEventListener("DOMContentLoaded", JTV.init);
