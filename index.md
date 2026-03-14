@@ -15,8 +15,15 @@ I have worked on the following projects earlier.
 - _[How to capture authors' linguistic style? - participated in a kaggle competition](https://nbviewer.org/github/aakashs07/nlp_projects/blob/master/kaggle_spooky_author_identification.ipynb)_
 - _[A sneak peek into error analysis of Naïve Bayes algorithm](https://nbviewer.org/github/aakashs07/nlp_projects/blob/master/Twitter_sentiment_analysis_nb1_using_naive_bayes.ipynb)_
 
-### News about my research activities
+### News about my research efforts
 
+
+2026
+
+_March_
+
+- 14th: Writing a long pending article on Tokenization and its Prod problem - 👉 [Interactive Visualizer]({{ site.baseurl }}/tokenization-visualizer.html)
+- 11th: Promoted to Lead Engineer in ITC's GenAI team. 
 
 2024
 
