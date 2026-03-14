@@ -23,7 +23,7 @@ I have worked on the following projects earlier.
 _March_
 
 - 14th: Writing a long pending article on Tokenization and its Prod problem - 👉 [Interactive Visualizer](/2026/03/14/jargon-tokenization-visualizer.html)
-- 11th: Promoted to Lead Engineer in ITC's GenAI team. 
+- 11th: Promoted to Lead Engineer in Evalueserve ITC's GenAI team. 
 
 2024
 
