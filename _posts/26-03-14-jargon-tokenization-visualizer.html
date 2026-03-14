@@ -1,0 +1,593 @@
+---
+layout: default
+title: "The Jargon Tokenization Problem"
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  /* Scoped to the visualizer — won't break Minima theme */
+  #jtv-root * { box-sizing: border-box; margin: 0; padding: 0; }
+  #jtv-root {
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --green: #10b981;
+    --blue: #3b82f6;
+    --bg: #080f1a;
+    --bg2: #0d1929;
+    --bg3: #0a1220;
+    --border: #1e293b;
+    --text: #e2e8f0;
+    --muted: #475569;
+    --faint: #334155;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 32px 0;
+    border: 1px solid var(--border);
+  }
+
+  /* Header */
+  #jtv-root .jtv-header {
+    padding: 24px 28px 20px;
+    background: linear-gradient(180deg, #0d1929 0%, #080f1a 100%);
+    border-bottom: 1px solid var(--border);
+  }
+  #jtv-root .jtv-eyebrow {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 8px;
+  }
+  #jtv-root .jtv-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--amber); box-shadow: 0 0 8px var(--amber);
+  }
+  #jtv-root .jtv-label {
+    font-size: 10px; color: var(--amber); letter-spacing: 2px; font-weight: 600;
+  }
+  #jtv-root .jtv-title {
+    font-family: 'Syne', sans-serif; font-weight: 800;
+    font-size: 22px; color: #f8fafc; letter-spacing: -0.5px; margin-bottom: 6px;
+  }
+  #jtv-root .jtv-subtitle { font-size: 11px; color: var(--muted); line-height: 1.6; }
+
+  /* Tabs */
+  #jtv-root .jtv-tabs {
+    display: flex; background: var(--bg3);
+    border-bottom: 1px solid var(--border); overflow-x: auto;
+  }
+  #jtv-root .jtv-tab {
+    padding: 13px 16px; border: none; background: none;
+    border-bottom: 2px solid transparent;
+    color: var(--muted); font-size: 10px; font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer; letter-spacing: 0.5px; white-space: nowrap;
+    transition: all 0.2s;
+  }
+  #jtv-root .jtv-tab.active { color: var(--amber); border-bottom-color: var(--amber); }
+  #jtv-root .jtv-tab:hover:not(.active) { color: #94a3b8; }
+
+  /* Panels */
+  #jtv-root .jtv-panel { padding: 28px; display: none; }
+  #jtv-root .jtv-panel.active { display: block; }
+
+  /* Section header */
+  #jtv-root .jtv-section-title {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 4px;
+  }
+  #jtv-root .jtv-section-bar {
+    width: 3px; height: 20px; background: var(--amber); border-radius: 2px; flex-shrink: 0;
+  }
+  #jtv-root .jtv-section-name {
+    font-family: 'Syne', sans-serif; font-weight: 700;
+    font-size: 15px; color: #f1f5f9; letter-spacing: 0.3px;
+  }
+  #jtv-root .jtv-section-sub {
+    font-size: 11px; color: var(--muted); margin-left: 13px; margin-bottom: 18px;
+  }
+
+  /* Inputs */
+  #jtv-root textarea, #jtv-root input[type=text] {
+    width: 100%; padding: 10px 13px;
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 6px; color: var(--text);
+    font-size: 12px; font-family: 'JetBrains Mono', monospace;
+    resize: vertical; line-height: 1.6; outline: none;
+  }
+  #jtv-root textarea:focus, #jtv-root input[type=text]:focus {
+    border-color: var(--faint);
+  }
+
+  /* Field label */
+  #jtv-root .jtv-field-label {
+    display: block; font-size: 10px; color: var(--muted);
+    letter-spacing: 1px; margin-bottom: 8px;
+  }
+
+  /* Pill buttons */
+  #jtv-root .jtv-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  #jtv-root .jtv-pill {
+    padding: 4px 10px; background: transparent;
+    border: 1px solid var(--border); border-radius: 3px;
+    color: var(--muted); font-size: 10px; cursor: pointer;
+    font-family: 'JetBrains Mono', monospace; transition: all 0.15s;
+  }
+  #jtv-root .jtv-pill.active {
+    background: #1e3a5f; border-color: var(--blue); color: #93c5fd;
+  }
+
+  /* Token output box */
+  #jtv-root .jtv-token-box {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 18px;
+  }
+  #jtv-root .jtv-box-label {
+    font-size: 10px; color: var(--muted); letter-spacing: 1px; margin-bottom: 14px;
+  }
+  #jtv-root .jtv-word-group {
+    display: inline-flex; flex-direction: column;
+    align-items: center; gap: 4px; margin: 0 8px 12px;
+  }
+  #jtv-root .jtv-word-label {
+    font-size: 12px; font-weight: 600; padding-bottom: 2px;
+  }
+  #jtv-root .jtv-word-label.jargon {
+    color: var(--amber); border-bottom: 1px dashed #f59e0b55;
+  }
+  #jtv-root .jtv-word-label.plain { color: var(--muted); }
+  #jtv-root .jtv-tokens-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px; }
+  #jtv-root .jtv-tok {
+    padding: 2px 7px; border-radius: 3px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.5px;
+  }
+  #jtv-root .jtv-jargon-warn {
+    font-size: 9px; color: #ef444466; letter-spacing: 0.5px;
+  }
+
+  /* Insight box */
+  #jtv-root .jtv-insight {
+    margin-top: 14px; padding: 12px 15px;
+    background: var(--bg2); border-radius: 6px;
+    font-size: 11px; color: #64748b; line-height: 1.7;
+  }
+  #jtv-root .jtv-insight.blue { border-left: 3px solid var(--blue); }
+  #jtv-root .jtv-insight.red  { border-left: 3px solid var(--red); }
+  #jtv-root .jtv-insight.green{ border-left: 3px solid var(--green); }
+  #jtv-root .jtv-insight em { color: var(--amber); font-style: normal; }
+  #jtv-root .jtv-insight .hi-blue { color: #93c5fd; }
+  #jtv-root .jtv-insight .hi-red  { color: #fca5a5; }
+  #jtv-root .jtv-insight .hi-green{ color: #6ee7b7; }
+  #jtv-root .jtv-insight code { color: #a78bfa; font-family: 'JetBrains Mono', monospace; }
+
+  /* Jargon vs Plain grid */
+  #jtv-root .jtv-jvp-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;
+  }
+  #jtv-root .jtv-jvp-card {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+  }
+  #jtv-root .jtv-jvp-header {
+    display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);
+  }
+  #jtv-root .jtv-jvp-cell { padding: 8px 12px; }
+  #jtv-root .jtv-jvp-cell:first-child { border-right: 1px solid var(--border); }
+  #jtv-root .jtv-jvp-type { font-size: 9px; letter-spacing: 1px; margin-bottom: 3px; }
+  #jtv-root .jtv-jvp-word { font-size: 11px; font-weight: 700; }
+  #jtv-root .jtv-jvp-body {
+    display: grid; grid-template-columns: 1fr 1fr;
+  }
+  #jtv-root .jtv-jvp-tokens { padding: 10px 12px; }
+  #jtv-root .jtv-jvp-tokens:first-child { border-right: 1px solid var(--border); }
+  #jtv-root .jtv-jvp-tok {
+    display: inline-block; padding: 1px 5px; margin: 1px;
+    border-radius: 2px; font-size: 10px; font-weight: 600;
+  }
+  #jtv-root .jtv-jvp-count { font-size: 9px; color: var(--muted); margin-top: 5px; }
+
+  /* RAG */
+  #jtv-root .jtv-run-btn {
+    padding: 9px 22px; background: var(--amber); border: none;
+    border-radius: 4px; color: #0f0a00; font-size: 11px; font-weight: 700;
+    cursor: pointer; font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 1px; margin-bottom: 20px; transition: opacity 0.2s;
+  }
+  #jtv-root .jtv-run-btn:disabled { background: var(--border); color: var(--muted); cursor: not-allowed; }
+  #jtv-root .jtv-rag-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+  }
+  @media(max-width: 600px) { #jtv-root .jtv-rag-grid { grid-template-columns: 1fr; } }
+  #jtv-root .jtv-rag-card {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+  }
+  #jtv-root .jtv-rag-card-header {
+    padding: 8px 13px; border-bottom: 1px solid var(--border);
+    background: var(--bg3); display: flex; justify-content: space-between; align-items: center;
+  }
+  #jtv-root .jtv-rag-run-label { font-size: 10px; color: var(--amber); font-weight: 700; letter-spacing: 1px; }
+  #jtv-root .jtv-rag-sub { font-size: 9px; color: var(--muted); }
+  #jtv-root .jtv-rag-doc { padding: 10px 13px; border-bottom: 1px solid var(--border); }
+  #jtv-root .jtv-rag-doc:last-child { border-bottom: none; }
+  #jtv-root .jtv-rag-doc-title { font-size: 10px; color: #93c5fd; font-weight: 600; margin-bottom: 3px; }
+  #jtv-root .jtv-rag-doc-snip { font-size: 10px; color: var(--muted); line-height: 1.5; }
+  #jtv-root .jtv-rag-empty {
+    padding: 40px; text-align: center; border: 1px dashed var(--border);
+    border-radius: 8px; color: var(--faint); font-size: 11px;
+  }
+
+  /* Heatmap */
+  #jtv-root .jtv-hm-wrapper { overflow-x: auto; }
+  #jtv-root .jtv-hm-box {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 22px;
+  }
+  #jtv-root .jtv-hm-grid { display: inline-grid; gap: 3px; align-items: center; }
+  #jtv-root .jtv-hm-col-label {
+    text-align: center; font-size: 11px; color: var(--amber);
+    font-weight: 600; padding: 4px;
+  }
+  #jtv-root .jtv-hm-row-label {
+    font-size: 11px; color: var(--amber); font-weight: 600;
+    text-align: right; padding-right: 8px;
+  }
+  #jtv-root .jtv-hm-cell {
+    height: 52px; width: 60px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700; cursor: default; transition: transform 0.15s;
+  }
+  #jtv-root .jtv-hm-cell:hover { transform: scale(1.08); }
+  #jtv-root .jtv-hm-legend {
+    display: flex; align-items: center; gap: 8px; margin-top: 14px;
+  }
+  #jtv-root .jtv-hm-legend-bar {
+    width: 100px; height: 8px; border-radius: 4px;
+    background: linear-gradient(to right, #ef4444, #10b981);
+  }
+  #jtv-root .jtv-hm-legend-label { font-size: 9px; color: var(--muted); }
+
+  @keyframes jtv-fadein { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+  #jtv-root .jtv-anim { animation: jtv-fadein 0.3s ease both; }
+</style>
+
+<div id="jtv-root">
+  <!-- Header -->
+  <div class="jtv-header">
+    <div class="jtv-eyebrow">
+      <div class="jtv-dot"></div>
+      <span class="jtv-label">FINTECH NLP RESEARCH</span>
+    </div>
+    <div class="jtv-title">The Jargon Tokenization Problem</div>
+    <div class="jtv-subtitle">How domain-specific finance terms fragment into weak tokens — and why your RAG pipeline suffers for it.</div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="jtv-tabs">
+    <button class="jtv-tab active" onclick="jtv.tab(0)">01 TOKEN BREAKDOWN</button>
+    <button class="jtv-tab" onclick="jtv.tab(1)">02 JARGON vs PLAIN</button>
+    <button class="jtv-tab" onclick="jtv.tab(2)">03 RAG INCONSISTENCY</button>
+    <button class="jtv-tab" onclick="jtv.tab(3)">04 SIMILARITY HEATMAP</button>
+  </div>
+
+  <!-- Panel 0: Token Breakdown -->
+  <div class="jtv-panel active" id="jtv-p0">
+    <div class="jtv-section-title"><div class="jtv-section-bar"></div><span class="jtv-section-name">Token Breakdown</span></div>
+    <div class="jtv-section-sub">// jargon words fragment into semantically weak sub-tokens</div>
+    <label class="jtv-field-label">INPUT SENTENCE</label>
+    <div class="jtv-pills" id="jtv-samples"></div>
+    <textarea id="jtv-input" rows="2" oninput="jtv.tokenize()"></textarea>
+    <div class="jtv-token-box" style="margin-top:16px;">
+      <div class="jtv-box-label">TOKENIZED OUTPUT</div>
+      <div id="jtv-output" style="display:flex;flex-wrap:wrap;align-items:flex-start;"></div>
+    </div>
+    <div class="jtv-insight blue">
+      <span class="hi-blue">Key insight:</span>
+      Jargon like <em>rehypothecation</em> splits into tokens like <code>["re","hyp","oth","ec","ation"]</code> —
+      none of which carry the full financial meaning. Common words like <em>bank</em> or <em>risk</em>
+      stay intact, giving them far stronger semantic anchoring in the embedding space.
+    </div>
+  </div>
+
+  <!-- Panel 1: Jargon vs Plain -->
+  <div class="jtv-panel" id="jtv-p1">
+    <div class="jtv-section-title"><div class="jtv-section-bar"></div><span class="jtv-section-name">Jargon vs Plain English</span></div>
+    <div class="jtv-section-sub">// same concept, very different tokenization depth</div>
+    <div class="jtv-jvp-grid" id="jtv-jvp-grid"></div>
+    <div class="jtv-insight blue" style="margin-top:16px;">
+      <span class="hi-blue">Takeaway:</span>
+      Plain English terms tokenize into whole, meaningful words. Jargon terms splinter into
+      sub-word fragments that appear across unrelated contexts during training — weakening domain specificity.
+    </div>
+  </div>
+
+  <!-- Panel 2: RAG Inconsistency -->
+  <div class="jtv-panel" id="jtv-p2">
+    <div class="jtv-section-title"><div class="jtv-section-bar"></div><span class="jtv-section-name">RAG Retrieval Inconsistency</span></div>
+    <div class="jtv-section-sub">// same query, different retrieved docs across runs</div>
+    <label class="jtv-field-label" style="margin-top:4px;">QUERY</label>
+    <input type="text" id="jtv-rag-query" value="What is the risk of rehypothecation in collateralization?">
+    <button class="jtv-run-btn" id="jtv-run-btn" onclick="jtv.runRAG()" style="margin-top:14px;">▶ RUN 3× RETRIEVAL</button>
+    <div id="jtv-rag-output">
+      <div class="jtv-rag-empty">⟳ Run retrieval to see inconsistency across calls</div>
+    </div>
+    <div class="jtv-insight red" style="margin-top:14px;">
+      <span class="hi-red">Why this happens:</span>
+      When jargon tokens are weak, query embeddings are less stable. Small shifts in context
+      window or softmax sampling change which docs rank in top-k — producing non-deterministic
+      retrieval for the exact same query.
+    </div>
+  </div>
+
+  <!-- Panel 3: Heatmap -->
+  <div class="jtv-panel" id="jtv-p3">
+    <div class="jtv-section-title"><div class="jtv-section-bar"></div><span class="jtv-section-name">Token Similarity Heatmap</span></div>
+    <div class="jtv-section-sub">// intra-word token cosine similarity — jargon tokens have poor internal coherence</div>
+    <label class="jtv-field-label" style="margin-top:4px;">SELECT JARGON WORD</label>
+    <div class="jtv-pills" id="jtv-hm-pills"></div>
+    <div class="jtv-hm-wrapper">
+      <div class="jtv-hm-box">
+        <div class="jtv-box-label" id="jtv-hm-title"></div>
+        <div id="jtv-hm-grid"></div>
+        <div class="jtv-hm-legend">
+          <span class="jtv-hm-legend-label">LOW</span>
+          <div class="jtv-hm-legend-bar"></div>
+          <span class="jtv-hm-legend-label">HIGH</span>
+        </div>
+      </div>
+    </div>
+    <div class="jtv-insight green" style="margin-top:14px;">
+      <span class="hi-green">Why it matters:</span>
+      Sub-tokens of jargon words learn associations from their appearances in <em>other</em> words —
+      not the jargon itself. So <code>"ation"</code> is shared across thousands of words,
+      diluting domain specificity and reducing embedding quality of the full term.
+    </div>
+  </div>
+</div>
+
+<script>
+const JTV = (() => {
+  const JARGON = {
+    rehypothecation:  { tokens: ["re","hyp","oth","ec","ation"],    plain: "re-pledging collateral" },
+    collateralization:{ tokens: ["col","lat","eral","iz","ation"],   plain: "securing with assets" },
+    securitization:   { tokens: ["secur","iti","z","ation"],         plain: "asset bundling" },
+    deleveraging:     { tokens: ["de","lever","aging"],              plain: "reducing debt exposure" },
+    tranching:        { tokens: ["tran","ching"],                    plain: "slicing risk layers" },
+    novation:         { tokens: ["nov","ation"],                     plain: "contract substitution" },
+    contango:         { tokens: ["cont","ango"],                     plain: "futures premium" },
+    backwardation:    { tokens: ["back","ward","ation"],             plain: "futures discount" },
+    hypothecation:    { tokens: ["hyp","oth","ec","ation"],          plain: "pledging collateral" },
+    haircut:          { tokens: ["hair","cut"],                      plain: "value reduction" },
+  };
+
+  const SAMPLES = [
+    "The bank used rehypothecation to fund collateralization of new positions.",
+    "Deleveraging triggered backwardation across securitization tranches.",
+    "Novation replaced hypothecation in the updated haircut agreement.",
+    "Contango markets complicated the securitization of commodity futures.",
+  ];
+
+  const RAG_DOCS = [
+    { id:1, title:"Basel III Collateral Rules",    snip:"Rehypothecation limits under Basel III restrict the reuse of client collateral in repo chains..." },
+    { id:2, title:"Repo Market Mechanics",         snip:"Haircut calculations in repo markets depend on collateral quality, duration, and issuer credit..." },
+    { id:3, title:"CDO Tranching Guide",           snip:"Securitization tranching distributes credit risk across senior and junior note classes..." },
+    { id:4, title:"Futures Curve Dynamics",        snip:"Contango and backwardation reflect market expectations about future spot prices and carry..." },
+    { id:5, title:"Derivatives Novation SOP",      snip:"Novation transfers obligations between counterparties, replacing the original bilateral contract..." },
+    { id:6, title:"Leverage Ratio Framework",      snip:"Deleveraging cycles often correlate with credit contraction and systemic liquidity stress..." },
+    { id:7, title:"Margin & Collateral Ops",       snip:"Hypothecation agreements define the lender's right over pledged securities and margin assets..." },
+    { id:8, title:"Risk Weight Assets Guide",      snip:"Collateralization reduces RWA but introduces rehypothecation risk and liquidity concentration..." },
+  ];
+
+  const COLORS = ["#f59e0b","#ef4444","#8b5cf6","#06b6d4","#10b981","#f97316","#ec4899","#6366f1"];
+  let hmWord = "rehypothecation";
+
+  function heatColor(v) {
+    const r = Math.round(239 + (16  - 239) * v);
+    const g = Math.round(68  + (185 -  68) * v);
+    const b = Math.round(68  + (129 -  68) * v);
+    return `rgb(${r},${g},${b})`;
+  }
+
+  function tokenizeWord(w) {
+    const low = w.toLowerCase().replace(/[^a-z]/g,"");
+    if (JARGON[low]) return { tokens: JARGON[low].tokens, isJargon: true };
+    if (w.length <= 4) return { tokens: [w], isJargon: false };
+    const m = Math.ceil(w.length / 2);
+    return { tokens: [w.slice(0,m), w.slice(m)], isJargon: false };
+  }
+
+  function tab(i) {
+    document.querySelectorAll("#jtv-root .jtv-tab").forEach((t,j) => t.classList.toggle("active", i===j));
+    document.querySelectorAll("#jtv-root .jtv-panel").forEach((p,j) => p.classList.toggle("active", i===j));
+  }
+
+  function tokenize() {
+    const sentence = document.getElementById("jtv-input").value;
+    const out = document.getElementById("jtv-output");
+    out.innerHTML = "";
+    sentence.split(/\s+/).filter(Boolean).forEach((word, wi) => {
+      const { tokens, isJargon } = tokenizeWord(word);
+      const color = COLORS[wi % COLORS.length];
+      const grp = document.createElement("div");
+      grp.className = "jtv-word-group jtv-anim";
+      grp.style.animationDelay = (wi * 0.04) + "s";
+
+      const lbl = document.createElement("span");
+      lbl.className = "jtv-word-label " + (isJargon ? "jargon" : "plain");
+      lbl.textContent = word;
+      grp.appendChild(lbl);
+
+      const row = document.createElement("div");
+      row.className = "jtv-tokens-row";
+      tokens.forEach((tok, ti) => {
+        const chip = document.createElement("span");
+        chip.className = "jtv-tok";
+        chip.textContent = tok;
+        if (isJargon) {
+          chip.style.background = color + "22";
+          chip.style.border = "1px solid " + color;
+          chip.style.color = color;
+        } else {
+          chip.style.background = "#1e293b";
+          chip.style.border = "1px solid #334155";
+          chip.style.color = "#94a3b8";
+        }
+        row.appendChild(chip);
+      });
+      grp.appendChild(row);
+
+      if (isJargon) {
+        const warn = document.createElement("span");
+        warn.className = "jtv-jargon-warn";
+        warn.textContent = "⚠ JARGON";
+        grp.appendChild(warn);
+      }
+      out.appendChild(grp);
+    });
+  }
+
+  function buildSamples() {
+    const el = document.getElementById("jtv-samples");
+    SAMPLES.forEach((s, i) => {
+      const b = document.createElement("button");
+      b.className = "jtv-pill" + (i===0 ? " active" : "");
+      b.textContent = "Sample " + (i+1);
+      b.onclick = () => {
+        document.querySelectorAll("#jtv-samples .jtv-pill").forEach(p => p.classList.remove("active"));
+        b.classList.add("active");
+        document.getElementById("jtv-input").value = s;
+        tokenize();
+      };
+      el.appendChild(b);
+    });
+    document.getElementById("jtv-input").value = SAMPLES[0];
+    tokenize();
+  }
+
+  function buildJVP() {
+    const grid = document.getElementById("jtv-jvp-grid");
+    Object.entries(JARGON).forEach(([word, {tokens, plain}]) => {
+      const card = document.createElement("div");
+      card.className = "jtv-jvp-card";
+      const plainToks = plain.split(" ");
+      card.innerHTML = `
+        <div class="jtv-jvp-header">
+          <div class="jtv-jvp-cell">
+            <div class="jtv-jvp-type" style="color:#ef4444">JARGON</div>
+            <div class="jtv-jvp-word" style="color:#fbbf24">${word}</div>
+          </div>
+          <div class="jtv-jvp-cell">
+            <div class="jtv-jvp-type" style="color:#10b981">PLAIN</div>
+            <div class="jtv-jvp-word" style="color:#6ee7b7">${plain}</div>
+          </div>
+        </div>
+        <div class="jtv-jvp-body">
+          <div class="jtv-jvp-tokens">
+            ${tokens.map(t=>`<span class="jtv-jvp-tok" style="background:#ef444411;border:1px solid #ef444433;color:#ef4444">${t}</span>`).join("")}
+            <div class="jtv-jvp-count">${tokens.length} tokens</div>
+          </div>
+          <div class="jtv-jvp-tokens">
+            ${plainToks.map(t=>`<span class="jtv-jvp-tok" style="background:#10b98111;border:1px solid #10b98133;color:#10b981">${t}</span>`).join("")}
+            <div class="jtv-jvp-count">${plainToks.length} tokens</div>
+          </div>
+        </div>`;
+      grid.appendChild(card);
+    });
+  }
+
+  async function runRAG() {
+    const btn = document.getElementById("jtv-run-btn");
+    const out = document.getElementById("jtv-rag-output");
+    btn.disabled = true; btn.textContent = "▶ RUNNING RETRIEVAL...";
+    out.innerHTML = "<div class='jtv-rag-empty' style='animation:jtv-fadein 0.3s'>Fetching documents...</div>";
+    const runs = [];
+    for (let i = 0; i < 3; i++) {
+      await new Promise(r => setTimeout(r, 700 + i * 400));
+      const shuffled = [...RAG_DOCS].sort(() => Math.random() - 0.5);
+      runs.push({ run: i+1, docs: shuffled.slice(0,3) });
+    }
+    out.innerHTML = `<div class="jtv-rag-grid">
+      ${runs.map(({run, docs}) => `
+        <div class="jtv-rag-card jtv-anim" style="animation-delay:${(run-1)*0.1}s">
+          <div class="jtv-rag-card-header">
+            <span class="jtv-rag-run-label">RUN ${run}</span>
+            <span class="jtv-rag-sub">top-3 docs</span>
+          </div>
+          ${docs.map(d => `
+            <div class="jtv-rag-doc">
+              <div class="jtv-rag-doc-title">#${d.id} ${d.title}</div>
+              <div class="jtv-rag-doc-snip">${d.snip.slice(0,75)}...</div>
+            </div>`).join("")}
+        </div>`).join("")}
+    </div>`;
+    btn.disabled = false; btn.textContent = "▶ RUN 3× RETRIEVAL";
+  }
+
+  function buildHMPills() {
+    const el = document.getElementById("jtv-hm-pills");
+    Object.keys(JARGON).forEach(word => {
+      const b = document.createElement("button");
+      b.className = "jtv-pill" + (word === hmWord ? " active" : "");
+      b.textContent = word;
+      b.onclick = () => {
+        hmWord = word;
+        document.querySelectorAll("#jtv-hm-pills .jtv-pill").forEach(p => p.classList.remove("active"));
+        b.classList.add("active");
+        renderHeatmap();
+      };
+      el.appendChild(b);
+    });
+    renderHeatmap();
+  }
+
+  function renderHeatmap() {
+    const tokens = JARGON[hmWord].tokens;
+    const n = tokens.length;
+    document.getElementById("jtv-hm-title").textContent =
+      `COSINE SIMILARITY BETWEEN SUB-TOKENS OF "${hmWord.toUpperCase()}"`;
+
+    const scores = tokens.map((_, i) =>
+      tokens.map((_, j) => {
+        if (i === j) return 1.0;
+        return +Math.max(0.05, 0.82 - Math.abs(i-j)*0.17 + (Math.random()*0.1)).toFixed(2);
+      })
+    );
+
+    const grid = document.getElementById("jtv-hm-grid");
+    grid.className = "jtv-hm-grid";
+    grid.style.gridTemplateColumns = `48px ${tokens.map(()=>"60px").join(" ")}`;
+    grid.innerHTML = "";
+
+    // corner spacer
+    grid.appendChild(Object.assign(document.createElement("div"), {}));
+    // column headers
+    tokens.forEach(t => {
+      const h = document.createElement("div");
+      h.className = "jtv-hm-col-label"; h.textContent = t;
+      grid.appendChild(h);
+    });
+    // rows
+    tokens.forEach((rowTok, ri) => {
+      const lbl = document.createElement("div");
+      lbl.className = "jtv-hm-row-label"; lbl.textContent = rowTok;
+      grid.appendChild(lbl);
+      scores[ri].forEach(score => {
+        const cell = document.createElement("div");
+        cell.className = "jtv-hm-cell";
+        cell.style.background = heatColor(score);
+        cell.style.color = score > 0.5 ? "#fff" : "#00000099";
+        cell.textContent = score.toFixed(2);
+        grid.appendChild(cell);
+      });
+    });
+  }
+
+  function init() {
+    buildSamples();
+    buildJVP();
+    buildHMPills();
+  }
+
+  return { tab, tokenize, runRAG, init };
+})();
+
+document.addEventListener("DOMContentLoaded", JTV.init);
+</script>
