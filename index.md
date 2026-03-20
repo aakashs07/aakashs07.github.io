@@ -200,6 +200,6 @@ _May_
 
 _October_
 
-- 2nd: Interesting arguments about EVs from the book "Numbers don't lie" [here](https://aakashs07.github.io/2022/10/02/Numbers-do-not-lie-about-electric-cars.html).
+- 15th: I finsihed reading an amazing book "Numbers don't lie".
 
 
