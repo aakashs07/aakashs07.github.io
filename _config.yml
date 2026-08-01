@@ -5,5 +5,4 @@ theme: jekyll-theme-minimal
 plugins:
   - minima
 title: Welcome to Aakash's homepage!
-description: A research engineer who likes to understand semantics captured by Natural Language Processing (NLP) algorithms and use this understanding to develop text mining methods.   
-  
+description: Research engineer: Interpretability in AI, with a background in shipping NLP and generative AI to production. Ph.D. on meaning in learned representations.
