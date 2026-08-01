@@ -1,8 +1,7 @@
-
 domain: aakashs07.github.io
 url: https://aakashs07.github.io
 theme: jekyll-theme-minimal
 plugins:
-  - minima
-title: Welcome to Aakash's homepage!
-description: Research engineer: Interpretability in AI, with a background in shipping NLP and generative AI to production. Ph.D. on meaning in learned representations.
+  - jekyll-seo-tag
+title: "Welcome to Aakash's homepage!"
+description: "Research engineer - Interpretability in AI, with a background in shipping NLP and generative AI to production. Ph.D. on meaning in learned representations."
